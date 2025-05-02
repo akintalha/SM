@@ -1,0 +1,757 @@
+<style>
+  /* inter-300 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local(''),
+      url('/assets/fonts/inter-v12-latin-300.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./fonts/inter-v12-latin-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local(''),
+      url('/assets/fonts/inter-v12-latin-500.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/assets/fonts/inter-v12-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+      url('/assets/fonts/inter-v12-latin-700.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/assets/fonts/inter-v12-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  .scroll-gallery {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 2rem;
+  }
+
+  .gallery-item {
+    flex: 0 0 auto;
+    width: 350px;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    filter: brightness(70%);
+    transition: all 0.3s ease;
+  }
+
+  .bg-gray-900 {
+    background-color: #E6B2BA;
+  }
+
+  .bg-gray-100 {
+    background-color: #E6B2BA;
+
+  }
+
+  .typing-demo {
+    width: 25ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 3rem!important;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .nav-link{
+    font-weight: 600!important;
+  }
+</style>
+
+
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+  <main>
+    <div class="w-100 overflow-hidden bg-gray-100"
+      style="background: linear-gradient(90deg,rgba(140, 140, 139, 1) 0%, rgba(193, 193, 189, 1) 5%, rgba(193, 193, 189, 1) 95%, rgba(140, 140, 139, 1) 100%);"
+      id="top">
+      <div class="position-relative">
+        <div class="col-12 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
+          style="background-image: url(assets/img/bizimis2.png);">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 py-vh-6 position-relative" style="height: 100vh!important;"
+              data-aos="fade-right">
+              <h1 class="display-1 fw-bold mt-5 typing-demo" style="color: #f9f9f9!important;font-size:3rem;max-width:560px;">
+                Beauty Beyond Borders</h1>
+              <p class="lead pa" style="color: #f9f9f9!important;font-size:1.5rem;max-width:600px;">Connecting You with
+                World-Class Aesthetics – Expertly, Personally, Seamlessly.</p>
+              <a href="https://wa.me/447497466099" target="_blank"
+                class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
+                style="color:#f9f9f9 !important;border-color:#E6B2BA !important;background:#E6B2BA!important;font-weight: 500;">Contact
+                Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-vh-5 w-100 overflow-hidden" id="services">
+      <div class="container">
+        <div class="w-100 overflow-hidden" id="services">
+          <div class="container" style="padding-bottom: 12vh;">
+
+
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-lg-5">
+                <h3 class="py-5 border-top border-dark" data-aos="fade-right">Our Mission</h3>
+              </div>
+              <div class="col-md-7" data-aos="fade-left">
+                <blockquote>
+                  <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">At SM Beauty
+                    Consultant & Broker, our mission is clear: to connect you with the best surgeons and medical
+                    professionals for aesthetic procedures and cosmetic surgery in Turkey. We believe in providing you
+                    with personalized, tailored plans that meet your unique goals while prioritizing your safety,
+                    well-being, and satisfaction.</div>
+                  <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">
+                    We strive to help you look and feel your best, without borders. By partnering with top-tier clinics
+                    and professionals, we bridge the gap between you and the treatments you desire. Your beauty journey
+                    is
+                    unique, and we're here to guide you every step of the way.
+                  </div>
+                  <div class="fs-5 fw-light pt-4 ">
+                    We empower you to make informed decisions by raising awareness of potential risks, and we guide you
+                    every step of the way on your beauty journey. Our commitment is to uphold the highest standards of
+                    care, transparency, and compassion, ensuring that you feel confident and informed throughout your
+                    experience.
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-lg-5">
+            {{!-- <div class="shadow rounded bg-cover bp-center align-self-end"
+              style="background-image: url(assets/img/asd.jpg);--bs-aspect-ratio: 50%;"></div> --}}
+            <img
+              style="width:525px!important;height:700px!important;object-fit:contain;box-shadow: 0 3rem 4rem rgba(21, 21, 21, .25);"
+              src="/assets/img/asd.jpg" alt="">
+          </div>
+          <div class="col-lg-7" style="font-size: 1.25rem;">
+            <h3 class="py-5 border-top border-dark" data-aos="fade-left">SM Beauty Consultancy &amp; Brokerage is
+              founded and led by Serpil M, a passionate
+              professional with dual British and Turkish nationality.
+            </h3>
+            <p data-aos="fade-left" data-aos-delay="200">Serpil holds an MBA in
+              Business
+              Administration from the University of Portsmouth and a Postgraduate Diploma in Adult
+              Nursing from the University of Surrey. With over 25 years of experience in health and
+              social care, particularly in the UK, Serpil has always been driven by a passion for
+              delivering the best outcomes for patients.
+            </p>
+            <p data-aos="fade-left" data-aos-delay="300">Combining her expertise in healthcare, business administration,
+              and beauty, Serpil created SM Beauty Consultant & Broker to bridge the gap between the UK and Turkey in
+              health tourism. She is uniquely positioned to understand both cultures, systems, and the needs of patients
+              seeking excellent care and results in Turkey.
+            </p>
+            <p data-aos="fade-left" data-aos-delay="400">Serpil’s wealth of experience in both healthcare and management
+              consulting, along with her dedication to patient safety, sets her apart as a respected and ethical
+              consultant. She works closely with board-certified doctors and specialists to ensure that you receive only
+              the best, most effective treatments. Her approachable, ethical, and transparent approach has made her a
+              trusted advisor for countless individuals seeking life-changing aesthetic procedures.
+            </p>
+            <p>
+              {{!-- <a href="/aboutdetail" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Learn
+                more
+              </a> --}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white-100 w-100 overflow-hidden" id="whatwedo">
+      <div class="container py-vh-6">
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-5">
+            <h3 class="py-5 border-top border-dark" data-aos="fade-right">What We Do</h3>
+          </div>
+          <div class="col-md-7" data-aos="fade-left">
+            <blockquote>
+              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">At SM Beauty
+                Consultant & Broker, our mission is clear: to connect you with the best surgeons and medical
+                professionals for aesthetic procedures and cosmetic surgery in Turkey. We believe in providing you
+                with personalized, tailored plans that meet your unique goals while prioritizing your safety,
+                well-being, and satisfaction.</div>
+              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">
+
+                We strive to help you look and feel your best, without borders. By partnering with top-tier clinics
+                and professionals, we bridge the gap between you and the treatments you desire. Your beauty journey is
+                unique, and we're here to guide you every step of the way.
+              </div>
+              <div class="fs-5 fw-light pt-4 ">
+                We empower you to make informed decisions by raising awareness of potential risks, and we guide you
+                every step of the way on your beauty journey. Our commitment is to uphold the highest standards of
+                care, transparency, and compassion, ensuring that you feel confident and informed throughout your
+                experience.
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="w-100 bg-gray-100" id="ourservices">
+      <div class="container py-vh-2">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-5">
+            <h3 class="py-5 border-top border-dark" data-aos="fade-right">Our Services</h3>
+          </div>
+          <div class="col-md-7" data-aos="fade-left">
+            <blockquote>
+              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">We provide a comprehensive range of
+                services as
+                both a consultant and intermediary. Our role is to simplify your journey by helping you identify the
+                best surgeons and ensuring that you receive the best possible care within your budget.</div>
+              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">
+                <p class="fs-5 my-1 fw-bold">Consultation & Custom Beauty Planning</p>
+                Every
+                beauty journey is personal. Our expert
+                consultants will assess your needs, preferences, and goals to create a customized plan that aligns
+                with
+                your vision. From initial consultation to post-treatment follow-ups, we’re by your side.
+              </div>
+              <div class="fs-5 fw-light pt-4 ">
+                <p class="fs-5 my-1 fw-bold">Medical Beauty Tourism</p>
+                <b> World-class treatments, globally accessible.</b>
+                We connect you with trusted clinics and specialists known for excellence in aesthetic procedures.
+                Whether you're considering cosmetic surgery or dental aesthetics, we ensure you receive top-quality
+                care
+                at affordable prices.
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="howitworks">
+      <div class="row d-flex justify-content-end py-vh-4">
+        <div class="col-lg-12" data-aos="fade-down">
+          <h2 class="display-6" style="font-weight:500;text-align:start;">How It Works</h2>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center" style="margin-top: -12vh;">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <span class="h5 fw-lighter">01.</span>
+          <h3 class="py-5 border-top border-dark"> Consultation & Personalized Plan
+          </h3>
+          <p>Begin by scheduling a one-on-one consultation with our expert beauty consultants. We’ll understand your
+            specific needs and recommend the best procedures and surgeons for you.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 py-vh-4 pb-0" style="padding-top: 10vh;" data-aos="fade-up" data-aos-delay="400">
+          <span class="h5 fw-lighter">02.</span>
+          <h3 class="py-5 border-top border-dark"> Treatment Selection & Booking
+          </h3>
+          <p>After choosing your perfect treatment, we guide you through the available options and connect you with
+            your chosen surgeon and their team. They handle every detail, from flight bookings to hotel stays.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 pb-0" style="padding-top:18vh;" data-aos="fade-up" data-aos-delay="600">
+          <span class="h5 fw-lighter">03.</span>
+          <h3 class="py-5 border-top border-dark">Post-Treatment Support & Aftercare</h3>
+          <p>We don’t just drop you off after your procedure. Our post-treatment care ensures that you recover
+            comfortably, with expert advice and follow-up consultations to track your results.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 py-vh-6 pb-0" style="padding-top: 24vh;" data-aos="fade-up" data-aos-delay="800">
+          <span class="h5 fw-lighter">04.</span>
+          <h3 class="py-5 border-top border-dark">Global Beauty Experience</h3>
+          <p>Enjoy world-class treatment at one of our prestigious partner clinics. You're in the best hands, cared
+            for with expertise, genuine compassion, and unwavering attention to your needs.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="py-vh-5 w-100 overflow-hidden" id="numbers">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-lg-5">
+            <h3 class="py-5 border-top border-dark" data-aos="fade-right">Our Impact in Numbers
+            </h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="display-6 mb-5" data-aos="fade-down">These figures reflect our commitment to quality, trust,
+                  and personalized aesthetic experiences.</h2>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up">
+                <div class="display-1 fw-bold py-4">99%</div>
+                <p class="text-black-50"> Client satisfaction rate across all surgical consultations and coordination
+                  services. We prioritize safety, transparency, and matching each individual with the right medical
+                  partner for their goals and well-being.</p>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up">
+                <div class="display-1 fw-bold py-4">+500</div>
+                <p class="text-black-50">Successful procedure journeys supported from consultation to post-op care. Each
+                  case is guided by our dedicated team, offering tailored solutions and full-service coordination in
+                  trusted clinics around the world.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="position-relative overflow-hidden w-100 bg-light" style="background-color: #E6B2BA!important;"
+      id="gallery">
+      <div class="container-fluid">
+        <h1 class="display-6 fw-bold py-vh-1" style="text-align: center;padding-top: 4.5vh;">Popular Procedures</h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="scroll-gallery py-vh-3" style="padding-bottom: 10vh;">
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/1.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/2.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/img/3.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/4.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/5.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/6.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/img/7.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/8.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/9.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/10.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/11.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/12.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/13.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/14.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/15.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container py-vh-4 w-100 overflow-hidden" id="whychoose">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-5">
+          <h3 class="py-5 border-top border-dark" data-aos="fade-right">Why Choose Türkiye for Your Beauty Journey?</h3>
+        </div>
+        <div class="col-md-7" data-aos="fade-left">
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b> Affordable, High-Quality Procedures</b> <br>
+            Turkey
+            offers
+            world-class treatments at a fraction of the cost you might find in Western countries.</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>State-of-the-Art Facilities </b> <br>
+            Turkey is home to cutting-edge hospitals and clinics renowned for their medical excellence.</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>All-Inclusive Packages</b> <br>
+            Carefully curated packages include surgery, accommodation, transportation, and aftercare, ensuring you get
+            everything you need.</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Top-Tier Surgeons</b> <br>
+            We work exclusively with board-certified, experienced surgeons who are leaders in their fields.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-vh-4 w-100 overflow-hidden">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-7" data-aos="fade-right">
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Personalized Service</b> <br>
+            We take the time to understand you—your goals, your concerns, and your dreams—so we can offer you the most
+            suitable solutions. No cookie-cutter approaches here!</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Trusted Professionals</b> <br>
+            We only work with the best. Our network of doctors, surgeons are all thoroughly vetted, ensuring the highest
+            standards of care and expertise.</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Seamless Experience</b> <br>
+            From your first consultation to your final aftercare, we handle everything. Our end-to-end service means you
+            can focus on what matters—your beauty journey—while we manage the logistics.</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Affordability Without Compromise</b> <br>
+            Enjoy high-quality treatments at competitive prices. With our network of trusted partners, we help you save
+            while receiving the very best in beauty and medical care.</div>
+        </div>
+        <div class="col-lg-5">
+          <h3 class="py-5 border-top border-dark" data-aos="fade-right">Why Choose Us?</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-vh-4 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-12 text-center" data-aos="fade">
+            <p class="text-secondary fs-1 lead" style="color: #151515!important;">Booking Process</p>
+            <div class="row d-flex align-items-start py-vh-4" style="color: #151515;">
+              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <span class="h5 fw-lighter">01.</span>
+                <h3 class="py-5 border-top border-dark">Initial Contact
+                </h3>
+                <p>Fill out the form by clicking the button below. In the form, we will collect your information to
+                  start the process and ensure we provide you with the best possible service. </p>
+              </div>
+              <div class="col-md-6 col-lg-3 pb-0" data-aos="fade-up" data-aos-delay="400">
+                <span class="h5 fw-lighter">02.</span>
+                <h3 class="py-5 border-top border-dark">Consultation Scheduling
+                </h3>
+                <p>Once we’ve received your information, we will send you a scheduling form and offer you available
+                  consultation slots. You can secure your preferred time by providing the necessary payment details.
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-3 pb-0" data-aos="fade-up" data-aos-delay="600">
+                <span class="h5 fw-lighter">03.</span>
+                <h3 class="py-5 border-top border-dark">Pre-Consultation Preparation</h3>
+                <p>Upon payment confirmation, we will guide you through the steps to prepare for your consultation,
+                  including completing an intake form to help us understand your needs and goals.</p>
+              </div>
+              <div class="col-md-6 col-lg-3 pb-0" data-aos="fade-up" data-aos-delay="800">
+                <span class="h5 fw-lighter">04.</span>
+                <h3 class="py-5 border-top border-dark">Consultation</h3>
+                <p>During your consultation, we will discuss your objectives, review your options, and provide
+                  tailored recommendations to help you make an informed decision</p>
+              </div>
+            </div>
+
+            <p class="text-secondary fs-2 lead" style="color: #151515!important;">Begin Your Beauty Transformation
+              Today!</p>
+            <h5 style="font-weight:300;color:#151515!important;">Your health and beauty deserve the best care. With SM
+              Beauty Consultant &
+              Broker, you’ll have expert
+              guidance every step of the way. Reach out to us now for tailored advice and solutions that prioritize your
+              safety and satisfaction.</h5>
+          </div>
+          <div class="col-12" style="text-align: center;">
+            <button onclick="gobookingform()"
+              style="background: #e9e9e9 !important;font-weight:700;color: #E6B2BA !important;border: none !important;box-shadow: 0 3rem 4rem rgba(21, 21, 21, .25) !important;margin-top: 1.5rem !important;margin-right: 1rem !important;font-size: 1rem;transition: all .5s ease-in-out 0s;--bs-btn-padding-y: calc(1rem + .3vh);--bs-btn-padding-x: calc(1rem + 1.4vw);--bs-btn-font-size: 1.2rem;--bs-btn-border-radius: 0px;"
+              class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Get My Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light w-100 overflow-hidden" id="testimonials">
+      <div class="container py-vh-6">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 text-center">
+            <h2 class="display-6">Trusted by clients from all over the world</h2>
+            <p class="lead">From Europe to the Middle East, from North America to the Gulf — we’ve helped hundreds of
+              clients plan their aesthetic journey with care, clarity, and confidence. Real stories, real results.
+            </p>
+          </div>
+          <div class="col-12 mt-4">
+            <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+
+              <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+                <div class="card p-4 mt-3 border-0">
+                  <div class="card-body">
+                    <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+                    </div>
+                    <blockquote class="blockquote">
+                      <p>"I never thought I'd be able to afford the procedure I wanted, but SM Beauty Consultant &
+                        Broker made it possible. The consultation process was so thorough, and I felt confident every
+                        step of the way. The results have truly exceeded my expectations!"</p>
+                    </blockquote>
+                    <div class="d-flex justify-content-between border-top pt-3">
+                      <div>
+                        <span class="h6 fw-5">Anna T.</span><br>
+                        <small class="text-muted">Client</small>
+                      </div>
+                      <img src="assets/img/webp/person9.webp" width="48" height="48" class="rounded-circle" alt=""
+                        data-aos="fade">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card p-4 shadow mt-3 border-0" data-aos="fade-down">
+                  <div class="card-body">
+                    <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+                    </div>
+                    <blockquote class="blockquote">
+                      <p>From booking my treatment to post-care, SM Beauty Consultant & Broker handled everything. I
+                        traveled across the globe for my treatment and felt like I was in the best hands. The results
+                        are incredible, and I couldn’t be happier!"</p>
+                    </blockquote>
+                    <div class="d-flex justify-content-between border-top pt-3">
+                      <p class="card-text">
+                        <span class="h6 fw-5">Jane L.</span><br>
+                        <small class="text-muted">Client</small>
+                      </p>
+                      <img src="assets/img/webp/person3.webp" width="48" height="48" class="rounded-circle" alt=""
+                        data-aos="fade">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card p-4 mt-3 border-0" data-aos="fade-left">
+                  <div class="card-body">
+                    <div class="text-dark py-2 fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+                    </div>
+                    <blockquote class="blockquote">
+                      <p>"Choosing SM Beauty Consultant & Broker was the best decision I ever made for myself. They
+                        listened to my goals, matched me with the perfect clinic, and supported me every step of the
+                        way. I look and feel better than I ever imagined!"</p>
+                    </blockquote>
+                    <div class="d-flex justify-content-between border-top pt-3">
+                      <p class="card-text">
+                        <span class="h6 fw-5">Emily S.</span><br>
+                        <small class="text-muted">Client</small>
+                      </p>
+                      <img src="assets/img/webp/person12.webp" width="48" height="48" class="rounded-circle" alt=""
+                        data-aos="fade">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="small py-vh-3 w-100 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <h2 class="display-6" style="text-align: center;padding-bottom:5vh;">FAQs</h2>
+          <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="200">
+            <div class="d-flex">
+              <div class="col-md-12 flex-fill">
+                <h3 class="h5 my-2">Q: Can you help me find accommodations during my trip?</h3>
+                <p>Absolutely! Your chosen surgeon and clinic can assist in arranging comfortable accommodations suited
+                  to your needs and budget — and we’re here to follow up and support you every step of the way.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up" data-aos-delay="400">
+            <div class="d-flex">
+              <div class="col-md-12 flex-fill">
+                <h3 class="h5 my-2">Q: How do I know the clinics are trustworthy?
+                </h3>
+                <p>We have a rigorous vetting process for our partners to ensure that all clinics meet the highest
+                  standards of care, hygiene, and professionalism.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up">
+            <div class="d-flex">
+              <div class="col-md-12 flex-fill">
+                <h3 class="h5 my-2">Q: What types of treatments do you offer?
+                </h3>
+                <p>We specialize in a diverse array of cosmetic, aesthetic procedures, and plastic surgery.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-8 text-center">
+          <h3 class="fs-2 fw-light">Stay in touch with our<span class="fw-bold">
+              monthly and free</span>
+            newsletter!
+          </h3>
+        </div>
+        <div class="col-12 col-lg-8 text-center">
+          <div class="row">
+            <div class="grouped-inputs border bg-light p-2">
+              <div class="row">
+                <div class="col">
+                  <form class="form-floating">
+                    <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </form>
+                </div>
+                <div class="col-auto">
+                  <a href="#" class="btn btn-dark py-3 px-5"
+                    style="background: #E6B2BA !important;color: #f9f9f9 !important;border-color:#E6B2BA!important;">Subscribe</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+</body>
+
+<script>
+
+  function gobookingform() {
+    window.location.href = "/bookingForm"
+  }
+</script>
+
+
+
+</html>

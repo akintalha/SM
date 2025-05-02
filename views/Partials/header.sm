@@ -1,0 +1,91 @@
+ <style>
+  .navbar.scrolled{
+    background-color: #e6b2baf3!important;
+  }
+    .navbar-brand {
+    display: none;
+  }
+
+  .navbar.scrolled .navbar-brand {
+    display: inline;
+  }
+ </style>
+ 
+  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+    <div class="container">
+      <a class="navbar-brand pe-4 fs-4" href="/">
+        <img id="logo" src="/assets/img/Group 13.svg" alt="" style="width: 80px;">
+        <!-- <span class="ms-1 fw-bolder">Serpil Mitchell</span> -->
+
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#services" aria-label="Brings you to the frontpage" style="color: #f9f9f9!important;">
+              Our Mission
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus" style="color: #f9f9f9!important;">
+              About us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatwedo" style="color: #f9f9f9!important;">
+              What We Do
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#ourservices" style="color: #f9f9f9!important;">
+              Our Services
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#howitworks" style="color: #f9f9f9!important;">
+              How It Works
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" style="color: #f9f9f9!important;">
+              Procedures
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whychoose" style="color: #f9f9f9!important;">
+              Why Choose Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#workwithus" style="color: #f9f9f9!important;">
+              Booking Process
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  </script>
+
+  <script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector(".navbar")
+    const header_height = header.offsetHeight
+
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= header_height) { add_class_on_scroll() }
+      else { remove_class_on_scroll() }
+
+      console.log(scrollpos)
+    })
+  </script>

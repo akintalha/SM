@@ -1,0 +1,655 @@
+<style>
+    /* inter-300 - latin */
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(''),
+            url('/assets/fonts/inter-v12-latin-300.woff2') format('woff2'),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/assets/fonts/inter-v12-latin-300.woff') format('woff');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(''),
+            url('/assets/fonts/inter-v12-latin-500.woff2') format('woff2'),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/assets/fonts/inter-v12-latin-500.woff') format('woff');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(''),
+            url('/assets/fonts/inter-v12-latin-700.woff2') format('woff2'),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/assets/fonts/inter-v12-latin-700.woff') format('woff');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* Step Form Styles */
+
+
+    form {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 3em;
+        border-radius: 0;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-step {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        transform: scale(0.8) translateY(50px);
+        transition: all 0.5s ease;
+    }
+
+    .form-step.active {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        position: relative;
+    }
+
+    .step-header {
+        position: absolute;
+        top: -10px;
+        right: 30px;
+        background: #151515;
+        color: #fff;
+        padding: 0.5em 1em;
+        border-radius: 0;
+        font-weight: 600;
+        animation: slideIn 0.5s forwards;
+    }
+
+    h5 {
+        margin-bottom: 1em;
+        color: #151515;
+
+        animation: fadeInDown 0.5s ease-in-out;
+    }
+
+    label {
+        display: block;
+        margin-top: 1em;
+        color: #151515;
+        font-weight: 300;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    textarea {
+        width: 100%;
+        padding: 0.75em 1em;
+        margin-top: 0.5em;
+        border: 2px solid #ddd;
+        border-radius: 0;
+        font-size: 1em;
+        outline: none;
+        transition: border-color 0.3s;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #1515159d;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 0.5em;
+        accent-color: #151515;
+
+    }
+
+    input[type="radio"] {
+        accent-color: #151515;
+    }
+
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    button {
+        padding: 0.75em 2em;
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+
+    }
+
+    .next-step,
+    .prev-step {
+        background: #151515;
+        color: #fff;
+    }
+
+    .next-step:hover,
+    .prev-step:hover {
+        background: #525252;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    button[type="submit"] {
+        background: #fd7e14;
+        color: #fff;
+        margin-left: auto;
+    }
+
+    button[type="submit"]:hover {
+        background: #ff7300;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #summary {
+        padding: 2rem 0;
+    }
+
+    #summary p {
+        margin: 1em 0;
+        color: #333;
+        font-weight: 500;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <main>
+        <div class="py-vh-5 w-100 overflow-hidden" id="services">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <h1 class="display-1 fw-bold border-bottom border-dark pb-4">Client Intake Form</h1>
+                        <p class="lead py-vh-2">Welcome! Please complete the following form to help us better understand
+                            your needs and ensure we provide the best service possible.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <form id="multi-step-form">
+                            <!-- Step 1 -->
+                            <div class="form-step active">
+                                <div class="step-header">Step 1 of 8</div>
+                                <h3>Personal Information</h3>
+                                <label for="fullname">Full Name:</label>
+                                <input type="text" id="fullname" name="fullname">
+                                <label for="birth">Date of Birth:</label>
+                                <input type="text" id="birth" placeholder="DD-MM-YYYY HH:MM" name="birth">
+
+                                <h5 style="margin-top: 2rem;">Gender:</h5>
+                                <label><input type="radio" name="gender" value="1"> Male</label>
+                                <label><input type="radio" name="gender" value="2"> Female</label>
+                                <label><input type="radio" name="gender" value="3"> Non-Binary</label>
+                                <label><input type="radio" name="gender" value="4"> Prefer not to say</label>
+                                <label>
+                                    <input type="radio" id="otherGenderRadio" name="gender" value="other">
+                                    Other
+                                </label>
+                                <input type="text" id="otherGendernInput" name="otherGenderValue"
+                                    placeholder="Enter details"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+
+                                <label for="address">Address:</label>
+                                <input type="text" id="address" name="address">
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" id="phone" name="phone">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" class="mb-4">
+                                <button type="button" class="next-step">Next</button>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 2 of 8</div>
+                                <h2>Emergency Contact</h2>
+                                <label for="emergencyname">Name:</label>
+                                <input type="text" id="emergencyname" name="emergencyname">
+                                <label for="emergencyphone">Phone Number:</label>
+                                <input type="text" id="emergencyphone" name="emergencyphone">
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 3 of 8</div>
+                                <h2>Referral Source</h2>
+                                <h5 style="margin-top: 2rem;">How did you hear about us?:</h5>
+                                <label><input type="radio" name="aboutus" value="1"> Website</label>
+                                <label><input type="radio" name="aboutus" value="2"> Social Media</label>
+                                <label><input type="radio" name="aboutus" value="3"> Friend/Family Referral</label>
+                                <label><input type="radio" name="aboutus" value="4"> Advertisement</label>
+                                <label>
+                                    <input type="radio" id="otherAboutusRadio" name="aboutus" value="other">
+                                    Other
+                                </label>
+                                <input type="text" id="otherAboutusInput" name="otherAboutusValue"
+                                    placeholder="Enter details"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 4 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 4 of 8</div>
+                                <h2>Health & Medical History (If Applicable)</h2>
+                                <label for="medicalconditions">Do you have any existing medical conditions or diagnoses
+                                    we should be aware of?:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">(e.g., diabetes,
+                                    hypertension, allergies, etc.)</p>
+                                <input type="text" id="medicalconditions" name="medicalconditions">
+                                <h5 style="margin-top: 2rem;">Are you currently taking any medications?:</h5>
+                                <label><input type="radio" name="ctmedications" value="1"> No</label>
+                                <label>
+                                    <input type="radio" id="ctmedicationsratio" name="ctmedications" value="yes">
+                                    Yes
+                                </label>
+                                <input type="text" id="otherctmedicationsInput" name="otherctmedicationsValue"
+                                    placeholder="Please list them"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+
+                                <h5 style="margin-top: 2rem;">Have you had any surgeries or hospitalizations in the
+                                    past?:</h5>
+                                <label><input type="radio" name="surgeries" value="1"> No</label>
+                                <label>
+                                    <input type="radio" id="surgeriesratio" name="surgeries" value="yes">
+                                    Yes
+                                </label>
+                                <input type="text" id="othersurgeriesInput" name="othersurgeriesValue"
+                                    placeholder="Please provide details"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+
+                                <h5 style="margin-top: 2rem;">Do you have any allergies?:</h5>
+                                <label><input type="radio" name="allergies" value="1"> No</label>
+                                <label>
+                                    <input type="radio" id="allergiesratio" name="allergies" value="yes">
+                                    Yes
+                                </label>
+                                <input type="text" id="otherallergiesInput" name="otherallergiesValue"
+                                    placeholder="Please list them"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <div class="form-step">
+                                <div class="step-header">Step 5 of 8</div>
+                                <h2>Lifestyle & Goals</h2>
+                                <label for="maingoals">14. What are the main goals or challenges you'd like to
+                                    address during your session?:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">(This could be related to
+                                    health, lifestyle, work, personal growth, etc.)</p>
+                                <textarea id="maingoals" name="maingoals" maxlength="500"></textarea>
+
+                                <h5 style="margin-top: 2rem;">How would you describe your current level of physical
+                                    activity?:</h5>
+                                <label><input type="radio" name="physicalactivity" value="1"> Sedentary (little or no
+                                    exercise)</label>
+                                <label><input type="radio" name="physicalactivity" value="2"> Lightly Active (light
+                                    exercise 1-3 days/week)</label>
+                                <label><input type="radio" name="physicalactivity" value="3"> Moderately Active
+                                    (moderate exercise 3-5 days/week)</label>
+                                <label><input type="radio" name="physicalactivity" value="4"> Very Active (intense
+                                    exercise 6-7 days/week)</label>
+
+                                <h5 style="margin-top: 2rem;">16. Do you follow a specific diet or have any dietary
+                                    preferences/restrictions?:</h5>
+                                <label><input type="radio" name="dietarypreferences" value="1"> No</label>
+                                <label>
+                                    <input type="radio" id="dietarypreferencesratio" name="dietarypreferences"
+                                        value="yes">
+                                    Yes
+                                </label>
+                                <input type="text" id="otherdietarypreferencesInput" name="otherdietarypreferencesValue"
+                                    placeholder="Please provide details"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+
+                                <h5 style="margin-top: 2rem;">How would you rate your current stress levels?:</h5>
+                                <label><input type="radio" name="stresslevels" value="1"> Low</label>
+                                <label><input type="radio" name="stresslevels" value="2"> Moderate</label>
+                                <label><input type="radio" name="stresslevels" value="3"> High</label>
+
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <div class="form-step">
+                                <div class="step-header">Step 6 of 8</div>
+                                <h2>Consent and Agreement</h2>
+                                <label for="disclaimer">Medical/Health Disclaimer:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">I understand that this
+                                    intake form is for informational purposes only and does not constitute a medical
+                                    diagnosis or treatment. I acknowledge that I should seek professional medical advice
+                                    if needed.</p>
+                                <label><input type="checkbox" name="disclaimer" value="1">I agree to the terms of the
+                                    disclaimer.</label>
+
+                                <label for="confidentiality">Confidentiality Agreement:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">I understand that all
+                                    personal information provided will be kept confidential and will only be used for
+                                    the purpose of my consultation or services.</p>
+                                <label><input type="checkbox" name="confidentiality" value="1">I consent to the use of
+                                    my
+                                    personal information as outlined in the privacy policy.</label>
+
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 7 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 7 of 8</div>
+                                <h2>Additional Information</h2>
+                                <label for="information">Is there anything else you’d like to share with us to help us
+                                    better assist you?</label>
+                                <textarea id="information" name="information" maxlength="500"></textarea>
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 8 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 8 of 8</div>
+                                <h2>Summary</h2>
+                                <div id="summary"></div>
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('multi-step-form');
+            const steps = document.querySelectorAll('.form-step');
+            const nextBtns = document.querySelectorAll('.next-step');
+            const prevBtns = document.querySelectorAll('.prev-step');
+            const summary = document.getElementById('summary');
+            let currentStep = 0;
+
+            nextBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (validateStep()) {
+                        steps[currentStep].classList.remove('active');
+                        currentStep++;
+                        if (currentStep < steps.length) {
+                            steps[currentStep].classList.add('active');
+                        }
+                        if (currentStep === steps.length - 1) {
+                            displaySummary();
+                        }
+                    }
+                });
+            });
+
+            prevBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    steps[currentStep].classList.remove('active');
+                    currentStep--;
+                    steps[currentStep].classList.add('active');
+                });
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Form successfully submitted!');
+                form.reset();
+                steps[currentStep].classList.remove('active');
+                currentStep = 0;
+                steps[currentStep].classList.add('active');
+            });
+
+            function validateStep() {
+                let stepIsValid = true;
+                const currentInputs = steps[currentStep].querySelectorAll('input, textarea');
+                currentInputs.forEach(input => {
+                    if (!input.checkValidity()) {
+                        input.reportValidity();
+                        stepIsValid = false;
+                    }
+                });
+                return stepIsValid;
+            }
+            function displaySummary() {
+                const fullname = document.getElementById('fullname').value || 'N/A';
+                const birth = document.getElementById('birth').value || 'N/A';
+
+                let gender = document.querySelector('input[name="gender"]:checked');
+                gender = gender ? (gender.value === "other" ? document.getElementById('otherGendernInput').value :
+                    (gender.value === "1" ? "Male" :
+                        gender.value === "2" ? "Female" :
+                            gender.value === "3" ? "Non-Binary" :
+                                "Prefer not to say")) : 'N/A';
+
+                const address = document.getElementById('address').value || 'N/A';
+                const phone = document.getElementById('phone').value || 'N/A';
+                const email = document.getElementById('email').value || 'N/A';
+
+                const emergencyname = document.getElementById('emergencyname').value || 'N/A';
+                const emergencyphone = document.getElementById('emergencyphone').value || 'N/A';
+
+                let aboutus = document.querySelector('input[name="aboutus"]:checked');
+                aboutus = aboutus ? (aboutus.value === "other" ? document.getElementById('otherAboutusInput').value :
+                    (aboutus.value === "1" ? "Website" :
+                        aboutus.value === "2" ? "Social Media" :
+                            aboutus.value === "3" ? "Friend/Family Referral" :
+                                aboutus.value === "4" ? "Advertisement" :
+                                    "Unknown")) : 'N/A';
+
+                const medicalconditions = document.getElementById('medicalconditions').value || 'N/A';
+
+                let ctmedications = document.querySelector('input[name="ctmedications"]:checked');
+                ctmedications = ctmedications ? (ctmedications.value === "yes" ? document.getElementById('otherctmedicationsInput').value : "No") : 'N/A';
+
+                let surgeries = document.querySelector('input[name="surgeries"]:checked');
+                surgeries = surgeries ? (surgeries.value === "yes" ? document.getElementById('othersurgeriesInput').value : "No") : 'N/A';
+
+                let allergies = document.querySelector('input[name="allergies"]:checked');
+                allergies = allergies ? (allergies.value === "yes" ? document.getElementById('otherallergiesInput').value : "No") : 'N/A';
+
+                const maingoals = document.getElementById('maingoals').value || 'N/A';
+
+                let physicalactivity = document.querySelector('input[name="physicalactivity"]:checked');
+                physicalactivity = physicalactivity ? (physicalactivity.value === "1" ? "Sedentary" :
+                    physicalactivity.value === "2" ? "Lightly Active" :
+                        physicalactivity.value === "3" ? "Moderately Active" :
+                            "Very Active") : 'N/A';
+
+                let dietarypreferences = document.querySelector('input[name="dietarypreferences"]:checked');
+                dietarypreferences = dietarypreferences ? (dietarypreferences.value === "yes" ? document.getElementById('otherdietarypreferencesInput').value : "No") : 'N/A';
+
+                let stresslevels = document.querySelector('input[name="stresslevels"]:checked');
+                stresslevels = stresslevels ? (stresslevels.value === "1" ? "Low" :
+                    stresslevels.value === "2" ? "Moderate" :
+                        "High") : 'N/A';
+
+                let disclaimer = document.querySelector('input[name="disclaimer"]:checked') ? 'Agreed' : 'Not Agreed';
+                let confidentiality = document.querySelector('input[name="confidentiality"]:checked') ? 'Agreed' : 'Not Agreed';
+
+                const information = document.getElementById('information').value || 'N/A';
+
+                const summary = document.getElementById('summary');
+                summary.innerHTML = `
+        <p><strong>Full Name:</strong> ${fullname}</p>
+        <p><strong>Date of Birth:</strong> ${birth}</p>
+        <p><strong>Gender:</strong> ${gender}</p>
+        <p><strong>Address:</strong> ${address}</p>
+        <p><strong>Phone Number:</strong> ${phone}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <hr>
+        <p><strong>Emergency Contact Name:</strong> ${emergencyname}</p>
+        <p><strong>Emergency Contact Phone:</strong> ${emergencyphone}</p>
+        <hr>
+        <p><strong>How did you hear about us:</strong> ${aboutus}</p>
+        <p><strong>Medical Conditions:</strong> ${medicalconditions}</p>
+        <p><strong>Taking Medications:</strong> ${ctmedications}</p>
+        <p><strong>Surgeries:</strong> ${surgeries}</p>
+        <p><strong>Allergies:</strong> ${allergies}</p>
+        <hr>
+        <p><strong>Main Goals:</strong> ${maingoals}</p>
+        <p><strong>Physical Activity Level:</strong> ${physicalactivity}</p>
+        <p><strong>Dietary Preferences:</strong> ${dietarypreferences}</p>
+        <p><strong>Stress Levels:</strong> ${stresslevels}</p>
+        <hr>
+        <p><strong>Medical/Health Disclaimer Agreement:</strong> ${disclaimer}</p>
+        <p><strong>Confidentiality Agreement:</strong> ${confidentiality}</p>
+        <hr>
+        <p><strong>Additional Information:</strong> ${information}</p>
+    `;
+            }
+
+
+
+            // Initialize steps
+            steps.forEach((step, index) => {
+                if (index !== currentStep) {
+                    step.classList.remove('active');
+                } else {
+                    step.classList.add('active');
+                }
+            });
+        });
+
+        const radios = document.querySelectorAll('input[name="gender"]');
+        const radios2 = document.querySelectorAll('input[name="aboutus"]');
+        const radios3 = document.querySelectorAll('input[name="ctmedications"]');
+        const radios4 = document.querySelectorAll('input[name="surgeries"]');
+        const radios5 = document.querySelectorAll('input[name="allergies"]');
+        const radios6 = document.querySelectorAll('input[name="dietarypreferences"]');
+
+
+
+        const otherInput = document.getElementById("otherGendernInput");
+        const aboutusInput = document.getElementById("otherAboutusInput");
+        const otherctmedicationsInput = document.getElementById("otherctmedicationsInput");
+        const othersurgeriesInput = document.getElementById("othersurgeriesInput");
+        const otherallergiesInput = document.getElementById("otherallergiesInput");
+        const otherdietarypreferencesInput = document.getElementById("otherdietarypreferencesInput");
+
+        radios.forEach(radio => {
+            radio.addEventListener("change", function () {
+                otherInput.style.display = (this.value === "other") ? "inline-block" : "none";
+            });
+        });
+
+        radios2.forEach(radio => {
+            radio.addEventListener("change", function () {
+                aboutusInput.style.display = (this.value === "other") ? "inline-block" : "none";
+            });
+        });
+
+        radios3.forEach(radio => {
+            radio.addEventListener("change", function () {
+                otherctmedicationsInput.style.display = (this.value === "yes") ? "inline-block" : "none";
+            });
+        });
+
+        radios4.forEach(radio => {
+            radio.addEventListener("change", function () {
+                othersurgeriesInput.style.display = (this.value === "yes") ? "inline-block" : "none";
+            });
+        });
+
+        radios5.forEach(radio => {
+            radio.addEventListener("change", function () {
+                otherallergiesInput.style.display = (this.value === "yes") ? "inline-block" : "none";
+            });
+        });
+
+        radios6.forEach(radio => {
+            radio.addEventListener("change", function () {
+                otherdietarypreferencesInput.style.display = (this.value === "yes") ? "inline-block" : "none";
+            });
+        });
+
+
+
+        flatpickr("#birth", {
+            enableTime: true,
+            dateFormat: "d-m-Y H:i",
+            time_24hr: true,
+            locale: "tr" // Türkçe dil desteği için
+        });
+
+    </script>
+</body>

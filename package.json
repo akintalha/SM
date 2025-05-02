@@ -1,0 +1,38 @@
+{
+  "name": "vepatek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap-select": "^1.13.18",
+    "chart.js": "^3.9.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "exif": "^0.6.0",
+    "express": "^4.17.1",
+    "express-device": "^0.4.2",
+    "express-handlebars": "^3.1.0",
+    "file-system": "^2.2.2",
+    "fix-orientation": "^1.1.0",
+    "glob": "^7.1.6",
+    "gm": "^1.23.1",
+    "jpeg-autorotate": "^5.0.2",
+    "mssql": "^6.0.1",
+    "multer": "^1.4.2",
+    "ncp": "^2.0.0",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "pdf-creator-node": "^1.4.1",
+    "pdfreader": "^1.0.7",
+    "replace-ext": "^1.0.0",
+    "request": "^2.88.2",
+    "uuidv4": "^6.0.0"
+  }
+}

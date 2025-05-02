@@ -1,0 +1,100 @@
+  <style>
+    /* inter-300 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-300.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-500.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-700.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+
+  <main>
+    <div class="py-vh-5 w-100 overflow-hidden" id="services">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h1 class="display-1 fw-bold border-bottom border-dark pb-4">Terms and Conditions</h1>
+            <p class="lead py-vh-2">These Terms and Conditions (“Agreement”) govern the services provided by SM Beauty Consultant & Broker (“Consultant”, “we”, “us” or “our”), to you (“Client” or “you”).
+              By engaging our services, you agree to the following terms: <br><br>
+            </p>
+          </div>
+        
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h4 class="fw-bold">1. Services Provided</h4>
+            <p class="lead py-vh-2">We offer consultancy and brokerage services to connect clients with aesthetic and medical professionals, clinics, or service providers based on 
+              your needs and preferences. Our services include, but are not limited to:<br> <br>
+              •	Initial consultations <br>
+              •	Treatment recommendations<br>
+              •	Clinic/doctor referrals<br>
+              •	Appointment coordination<br>
+              •	Support throughout the treatment process<br><br>
+              We do <b>not</b> provide medical advice or perform any medical treatments ourselves.<br><br>              
+            </p>
+          </div>
+
+    
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h4 class="fw-bold">2. Client Responsibilities</h4>
+            <p class="lead py-vh-2">•	You are responsible for providing accurate and complete information during the consultation process. <br><br>
+              •	You are responsible for making your own decisions regarding any treatment you pursue. <br><br>
+              •	It is your responsibility to consult directly with licensed medical professionals before undergoing any procedure.<br><br>
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h4 class="fw-bold">3. Third-Party Services</h4>
+            <p class="lead py-vh-2">We act solely as a facilitator and do not have control over, or responsibility for, the services provided by clinics, doctors, or third-party providers. 
+              Any agreement or treatment you enter into with a third party is at your own discretion and risk.<br><br>
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-10 col-xl-8">
+            <h4 class="fw-bold">4. Fees & Payments</h4>
+            <p class="lead py-vh-2">•	Our consultation and brokerage fees will be outlined clearly before services begin. <br><br>
+              •	Payment must be made in full prior to final appointment confirmation unless otherwise agreed. <br> <br>
+              •	We reserve the right to withhold services if payment is not received. <br><br>
+            </p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+</body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Serpil Mitchell">
+  <title>ARI İş Uygulamaları</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/smlogo.svg">
+
+  {{!-- IMPORT CSS --}}
+  <link rel="stylesheet" href="/assets/css/theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+  {{!-- IMPORT JS --}}
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/aos.js"></script>
+  <script src="/assets/js/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body style="min-width: 1190px;" id="etkinlikbody">
+  <div id="MainBody">
+    {{>leftmenu}}
+    <section class="home-section">
+      <div class="home-content">
+        {{>header}}
+        {{{body}}}
+      </div>
+    </section>
+  </div>
+  {{>footer}}
+
+  <script>
+    AOS.init({
+      duration: 800, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+
+
+</body>
+
+</html>

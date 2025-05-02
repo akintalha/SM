@@ -1,0 +1,522 @@
+<style>
+    /* inter-300 - latin */
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(''),
+            url('/assets/fonts/inter-v12-latin-300.woff2') format('woff2'),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/assets/fonts/inter-v12-latin-300.woff') format('woff');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(''),
+            url('/assets/fonts/inter-v12-latin-500.woff2') format('woff2'),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/assets/fonts/inter-v12-latin-500.woff') format('woff');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(''),
+            url('/assets/fonts/inter-v12-latin-700.woff2') format('woff2'),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('/assets/fonts/inter-v12-latin-700.woff') format('woff');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* Step Form Styles */
+
+
+    form {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 3em;
+        border-radius: 0;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-step {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        transform: scale(0.8) translateY(50px);
+        transition: all 0.5s ease;
+    }
+
+    .form-step.active {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        position: relative;
+    }
+
+    .step-header {
+        position: absolute;
+        top: -10px;
+        right: 30px;
+        background: #151515;
+        color: #fff;
+        padding: 0.5em 1em;
+        border-radius: 0;
+        font-weight: 600;
+        animation: slideIn 0.5s forwards;
+    }
+
+    h5 {
+        margin-bottom: 1em;
+        color: #151515;
+
+        animation: fadeInDown 0.5s ease-in-out;
+    }
+
+    label {
+        display: block;
+        margin-top: 1em;
+        color: #151515;
+        font-weight: 300;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    textarea {
+        width: 100%;
+        padding: 0.75em 1em;
+        margin-top: 0.5em;
+        border: 2px solid #ddd;
+        border-radius: 0;
+        font-size: 1em;
+        outline: none;
+        transition: border-color 0.3s;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #1515159d;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 0.5em;
+        accent-color: #151515;
+
+    }
+
+    input[type="radio"] {
+        accent-color: #151515;
+        margin-right: 5px;
+    }
+
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    button {
+        padding: 0.75em 2em;
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+
+    }
+
+    .next-step,
+    .prev-step {
+        background: #151515;
+        color: #fff;
+    }
+
+    .next-step:hover,
+    .prev-step:hover {
+        background: #525252;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    button[type="submit"] {
+        background: #fd7e14;
+        color: #fff;
+        margin-left: auto;
+    }
+
+    button[type="submit"]:hover {
+        background: #ff7300;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #summary {
+        padding: 2rem 0;
+    }
+
+    #summary p {
+        margin: 1em 0;
+        color: #333;
+        font-weight: 500;
+        animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    #navScroll{
+        display: none;
+    }
+</style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <main>
+        <div class="py-vh-5 w-100 overflow-hidden" id="services">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <h1 class="display-1 fw-bold border-bottom border-dark pb-4">Consultation Booking Form</h1>
+                        <p class="lead py-vh-2">Please fill out the form below to schedule your consultation. Once we
+                            receive your details, we will confirm the appointment and send you further instructions.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <form id="multi-step-form">
+                            <!-- Step 1 -->
+                            <div class="form-step active">
+                                <div class="step-header">Step 1 of 7</div>
+                                <h3>Personal Information</h3>
+                                <label for="fullname">Full Name:</label>
+                                <input type="text" id="fullname" name="fullname">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" id="phone" name="phone">
+                                <h5 style="margin-top: 2rem;">Preferred Method of Contact:</h5>
+                                <label><input type="checkbox" name="pref" value="1"> Email </label>
+                                <label><input type="checkbox" name="pref" value="2">Phone Call </label>
+                                <label><input type="checkbox" name="pref" value="3"> Text Message</label>
+                                <div class="buttons">
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 2 of 7</div>
+                                <h2>Consultation Details</h2>
+                                <label for="datetimepicker">Preferred Date and Time for Consultation:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">(Please provide a few
+                                    options, and we will confirm based on availability.)</p>
+                                <input type="text" id="datetimepicker" placeholder="DD-MM-YYYY HH:MM" name="date">
+                                <p style="margin:0;text-align:center;padding-top:5px;">or</p>
+                                <input type="text" id="datetimepicker2" placeholder="DD-MM-YYYY HH:MM" name="date2">
+                                <h5 style="margin-top: 2rem;">Consultation Duration:</h5>
+                                <label><input type="radio" name="constdurations" value="30"> 30 minutes</label>
+                                <label><input type="radio" name="constdurations" value="60"> 60 minutes</label>
+                                <label>
+                                    <input type="radio" id="otherDurationRadio" name="constdurations" value="other">
+                                    Other
+                                </label>
+                                <input type="text" id="otherDurationInput" name="otherDurationValue"
+                                    placeholder="Enter duration (e.g., 90 minutes)"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+                                <label for="topicconsultation">Please describe the purpose or topic of the
+                                    consultation:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">(This helps us prepare
+                                    and
+                                    ensure the session is tailored to your needs.)</p>
+                                <textarea id="topicconsultation" name="topicconsultation" maxlength="500"></textarea>
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 3 of 7</div>
+                                <h2>Medical or Health Information (if applicable)</h2>
+                                <label for="concerns">Do you have any pre-existing conditions or concerns you
+                                    would like to share?:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">(This section is
+                                    optional,
+                                    but if your consultation involves medical or health-related topics, please
+                                    provide
+                                    any relevant information.)</p>
+                                <textarea id="concerns" name="concerns" maxlength="500"></textarea>
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 4 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 4 of 7</div>
+                                <h2>Payment Information</h2>
+                                <h5 style="margin-top: 2rem;">Preferred Payment Method:</h5>
+                                <label><input type="radio" name="payment" value="1">Credit/Debit Card</label>
+                                <label><input type="radio" name="payment" value="2">Paypal</label>
+                                <label><input type="radio" name="payment" value="3">Bank Transfer</label>
+                                <label>
+                                    <input type="radio" id="otherPaymentRadio" name="payment" value="other">
+                                    Other
+                                </label>
+                                <input type="text" id="otherPaymentInput" name="otherPaymentValue"
+                                    placeholder="Enter Method (e.g., Cash)"
+                                    style="display:none; margin-left: 1rem; margin-top: 0.5rem;width:50%;">
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <div class="form-step">
+                                <div class="step-header">Step 5 of 7</div>
+                                <h2>Consent and Agreement</h2>
+                                <label for="agreement">Privacy Consent:</label>
+                                <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">By submitting this
+                                    form,
+                                    you consent to the collection and processing of your personal data as described
+                                    in
+                                    our Privacy Statement.</p>
+                                <label><input type="checkbox" name="agreement" value="1">I agree to the <a href="/privacystatement"  target="_blank">privacy
+                                    policy</a>
+                                    and <a href="/termsandconditions"  target="_blank">terms and conditions.</a> </label>
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <div class="form-step">
+                                <div class="step-header">Step 6 of 7</div>
+                                <h2>Consent and Agreement</h2>
+                                <label for="anything">Is there anything else you would like to share or ask
+                                    before your consultation?</label>
+                                <textarea id="anything" name="anything" maxlength="500"></textarea>
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 6 -->
+                            <div class="form-step">
+                                <div class="step-header">Step 7 of 7</div>
+                                <h2>Summary</h2>
+                                <div id="summary"></div>
+                                <div class="buttons">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('multi-step-form');
+            const steps = document.querySelectorAll('.form-step');
+            const nextBtns = document.querySelectorAll('.next-step');
+            const prevBtns = document.querySelectorAll('.prev-step');
+            const summary = document.getElementById('summary');
+            let currentStep = 0;
+
+            nextBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (validateStep()) {
+                        steps[currentStep].classList.remove('active');
+                        currentStep++;
+                        if (currentStep < steps.length) {
+                            steps[currentStep].classList.add('active');
+                        }
+                        if (currentStep === steps.length - 1) {
+                            displaySummary();
+                        }
+                    }
+                });
+            });
+
+            prevBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    steps[currentStep].classList.remove('active');
+                    currentStep--;
+                    steps[currentStep].classList.add('active');
+                });
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Form successfully submitted!');
+                form.reset();
+                steps[currentStep].classList.remove('active');
+                currentStep = 0;
+                steps[currentStep].classList.add('active');
+            });
+
+            function validateStep() {
+                let stepIsValid = true;
+                const currentInputs = steps[currentStep].querySelectorAll('input, textarea');
+                currentInputs.forEach(input => {
+                    if (!input.checkValidity()) {
+                        input.reportValidity();
+                        stepIsValid = false;
+                    }
+                });
+                return stepIsValid;
+            }
+            function displaySummary() {
+                const fullname = document.getElementById('fullname').value || 'N/A';
+                const email = document.getElementById('email').value || 'N/A';
+                const phone = document.getElementById('phone').value || 'N/A';
+
+                const prefs = Array.from(document.querySelectorAll('input[name="pref"]:checked'))
+                    .map(el => {
+                        switch (el.value) {
+                            case "1": return "Email";
+                            case "2": return "Phone Call";
+                            case "3": return "Text Message";
+                            default: return "Unknown";
+                        }
+                    }).join(', ') || 'None';
+
+                const datetime = document.getElementById('datetimepicker').value || 'N/A';
+                const datetime2 = document.getElementById('datetimepicker2').value || 'N/A';
+
+                let duration = document.querySelector('input[name="constdurations"]:checked');
+                duration = duration ? (duration.value === "other" ? document.getElementById('otherDurationInput').value : duration.value + ' minutes') : 'N/A';
+
+                const topic = document.getElementById('topicconsultation').value || 'N/A';
+
+                const concerns = document.getElementById('concerns').value || 'None';
+
+                let payment = document.querySelector('input[name="payment"]:checked');
+                payment = payment ? (payment.value === "other" ? document.getElementById('otherPaymentInput').value :
+                    (payment.value === "1" ? "Credit/Debit Card" : payment.value === "2" ? "Paypal" : "Bank Transfer")) : 'N/A';
+
+                const agreement = document.querySelector('input[name="agreement"]:checked') ? 'Agreed' : 'Not Agreed';
+
+                const anything = document.getElementById('anything').value || 'None';
+
+                summary.innerHTML = `
+        <p><strong>Full Name:</strong> ${fullname}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Preferred Contact Methods:</strong> ${prefs}</p>
+        <hr>
+         <p><strong>Consultation Date & Time (Option 1):</strong> ${datetime}</p>
+        <p><strong>Consultation Date & Time (Option 2):</strong> ${datetime2}</p>
+        <p><strong>Consultation Duration:</strong> ${duration}</p>
+        <p><strong>Topic of Consultation:</strong> ${topic}</p>
+        <hr>
+        <p><strong>Medical Concerns:</strong> ${concerns}</p>
+        <hr>
+        <p><strong>Preferred Payment Method:</strong> ${payment}</p>
+        <hr>
+        <p><strong>Privacy Agreement:</strong> ${agreement}</p>
+        <hr>
+        <p><strong>Additional Comments:</strong> ${anything}</p>
+    `;
+            }
+
+
+            // Initialize steps
+            steps.forEach((step, index) => {
+                if (index !== currentStep) {
+                    step.classList.remove('active');
+                } else {
+                    step.classList.add('active');
+                }
+            });
+        });
+
+        const radios = document.querySelectorAll('input[name="constdurations"]');
+        const radios2 = document.querySelectorAll('input[name="payment"]');
+
+        const otherInput = document.getElementById("otherDurationInput");
+        const otherInput2 = document.getElementById("otherPaymentInput");
+
+        radios.forEach(radio => {
+            radio.addEventListener("change", function () {
+                otherInput.style.display = (this.value === "other") ? "inline-block" : "none";
+            });
+        });
+
+        radios2.forEach(radio => {
+            radio.addEventListener("change", function () {
+                otherInput2.style.display = (this.value === "other") ? "inline-block" : "none";
+            });
+        });
+
+
+        flatpickr("#datetimepicker", {
+            enableTime: true,
+            dateFormat: "d-m-Y H:i",
+            time_24hr: true,
+            locale: "tr" // Türkçe dil desteği için
+        });
+
+        flatpickr("#datetimepicker2", {
+            enableTime: true,
+            dateFormat: "d-m-Y H:i",
+            time_24hr: true,
+            locale: "tr" // Türkçe dil desteği için
+        });
+
+    </script>
+</body>

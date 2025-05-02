@@ -1,0 +1,112 @@
+<style>
+  /* inter-300 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local(''),
+      url('/assets/fonts/inter-v12-latin-300.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/assets/fonts/inter-v12-latin-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local(''),
+      url('/assets/fonts/inter-v12-latin-500.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/assets/fonts/inter-v12-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+      url('/assets/fonts/inter-v12-latin-700.woff2') format('woff2'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/assets/fonts/inter-v12-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+     .bg-gray-900 {
+    background-color: #E6B2BA;
+  }
+</style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+
+  <main>
+    <div class="py-vh-5 w-100 overflow-hidden" id="services">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 ">
+            <h1 class="display-1 fw-bold border-bottom border-dark pb-4">About Us </h1>
+            <p class="lead py-vh-1">SM Beauty Consultancy & Brokerage is founded and led by Serpil M, a passionate
+              professional with dual British and Turkish nationality.
+              Serpil holds an MBA in Business Administration from the University of Portsmouth and a Postgraduate
+              Diploma in Adult Nursing from the University of
+              Surrey. With over 25 years of experience in health and social care, particularly in the UK, Serpil has
+              always been driven by a
+              passion for delivering the best outcomes for patients.
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-10 col-xl-8">
+            <p class="lead py-vh-1">Combining her expertise in healthcare, business administration, and beauty, Serpil
+              created SM Beauty Consultant & Broker to bridge the gap between the UK and Turkey in health tourism. She
+              is uniquely positioned to understand both cultures, systems, and the needs of patients seeking excellent
+              care and results in Turkey.
+            </p>
+          </div>
+
+
+          <div class="col-12 col-lg-10 col-xl-8">
+            <p class="lead py-vh-1">Serpil’s wealth of experience in both healthcare and management consulting, along
+              with her dedication to patient safety, sets her apart as a respected and ethical consultant. She works
+              closely with board-certified doctors and specialists to ensure that you receive only the best, most
+              effective treatments. Her approachable, ethical, and transparent approach has made her a trusted advisor
+              for countless individuals seeking life-changing aesthetic procedures.
+            </p>
+          </div>
+
+          <div class="col-12 py-vh-3 my-5 bg-gray-900 text-light px-5">
+            <div class="row d-flex align-items-center px-5">
+              <div class="col-12 col-lg-5 text-end d-flex justify-content-end">
+                <h2 class="border-bottom border-light pb-4 text-end me-5">What We Do</h2>
+              </div>
+              <div class="col-12 col-lg-7">
+                <p class="border-bottom border-light pb-5 mb-5 text-light" style="font-size: 1.25rem;">At SM Beauty
+                  Consultant & Broker, we believe in making beauty accessible, personalized, and world-class. We
+                  simplify the complex world of medical tourism by providing expert consultancy and brokerage services
+                  that connect you to the finest aesthetic professionals. We eliminate the confusion caused by social
+                  marketing and false information, ensuring that every treatment and experience is tailored to your
+                  needs and you make well-informed decisions. We streamline the journey with integrity, openness, and
+                  professional insights.
+                </p>
+                <p class="text-light" style="font-size: 1.25rem;">
+                  Our goal is to be your trusted partner and advocate in this journey, doing all the research and heavy
+                  lifting to ensure your aesthetic dreams become a reality. From finding the perfect surgeon to handling
+                  travel and post-care logistics, we are here to guide you through every step of the process.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+</body>

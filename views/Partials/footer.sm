@@ -1,0 +1,90 @@
+<footer>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+
+      <div class="col-12 col-lg-6 col-xl-4 border-end p-5">
+        <img src="assets/img/smlogonewblack.svg" style="filter: contrast(0.5);" alt="" width="64" height="64" data-aos="fade-right">
+        <address class="text-secondary mt-3">
+          <strong>SM Beauty Consultant & Broker</strong><br>
+          <strong>Let’s Get Started</strong><br>
+          Ready to embark on your beauty journey? Reach out to us today and let’s discuss your unique needs. <br>
+          <strong>Email:</strong><br>
+          <a class="text-secondary"
+            href="mailto:admin@smbeautyconsultantandbroker.co.uk">admin@smbeautyconsultantandbroker.co.uk</a>
+            <br>
+          {{!-- <strong>Phone:</strong><br>
+          <a class="text-secondary" href="https://wa.me/447497466099" target="_blank">+44 7497 466099</a> --}}
+
+            <strong> <a class="text-secondary"
+            href="/privacystatement">Privacy Policy</a>
+            <br></strong>
+             <strong> <a class="text-secondary"
+            href="/termsandconditions">Terms and Conditions</a></strong>
+        </address>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 border-end p-5">
+        <h3 class="h6 mb-3">Section</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#"> What We Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Procedures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Why Choose Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Booking Process</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 border-end p-5">
+        <h3 class="h6 mb-3">Popular Procedures</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Rhinoplasty (Nose Surgery)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Breast Augmentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Liposuction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Tummy Tuck (Abdominoplasty)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Brazilian Butt Lift (BBL)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Facelift (Rhytidectomy)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Eyelid Surgery (Blepharoplasty)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="#">Hair Transplantation</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center py-3 small">	&#169; SM Beauty Consultant & Broker <a href="^#" class="link-fancy"
+      target="_blank">All Rights Reserved.</a>
+  </div>
+</footer>
