@@ -25,16 +25,16 @@
     }
 
     .navbar {
-  width: 100%;
-  overflow-x: hidden;
-}
+      width: 100%;
+      overflow-x: hidden;
+    }
 
-/* .container taşmasını engelle */
-.navbar .container {
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+    /* .container taşmasını engelle */
+    .navbar .container {
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     .nav-link {
       display: block;
@@ -119,5 +119,21 @@
     else { remove_class_on_scroll() }
 
     console.log(scrollpos)
+  })
+
+  function dynamicWidth() {
+    const bodyWidth = document.body.clientWidth;
+    const headerWidth = document.querySelector('.navbar').clientWidth;
+    if (bodyWidth < headerWidth) {
+      document.querySelector('.navbar').style.width = bodyWidth + 'px';
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    dynamicWidth()
+  });
+
+  addEventListener("resize", (event) => {
+    dynamicWidth()
   })
 </script>

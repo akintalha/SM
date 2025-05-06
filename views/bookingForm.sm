@@ -213,7 +213,8 @@
             transform: translateX(0);
         }
     }
-    #navScroll{
+
+    #navScroll {
         display: none;
     }
 </style>
@@ -234,7 +235,7 @@
                     </div>
 
                     <div class="col-12 col-lg-10 col-xl-8">
-                        <form id="multi-step-form">
+                        <form id="multi-step-form" method="POST" action="/submit-form">
                             <!-- Step 1 -->
                             <div class="form-step active">
                                 <div class="step-header">Step 1 of 7</div>
@@ -330,9 +331,10 @@
                                     you consent to the collection and processing of your personal data as described
                                     in
                                     our Privacy Statement.</p>
-                                <label><input type="checkbox" name="agreement" value="1">I agree to the <a href="/privacystatement"  target="_blank">privacy
-                                    policy</a>
-                                    and <a href="/termsandconditions"  target="_blank">terms and conditions.</a> </label>
+                                <label><input type="checkbox" name="agreement" value="1">I agree to the <a
+                                        href="/privacystatement" target="_blank">privacy
+                                        policy</a>
+                                    and <a href="/termsandconditions" target="_blank">terms and conditions.</a> </label>
                                 <div class="buttons">
                                     <button type="button" class="prev-step">Previous</button>
                                     <button type="button" class="next-step">Next</button>
@@ -401,12 +403,80 @@
             });
 
             form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Form successfully submitted!');
-                form.reset();
-                steps[currentStep].classList.remove('active');
-                currentStep = 0;
-                steps[currentStep].classList.add('active');
+                e.preventDefault(); // Sayfanın yeniden yüklenmesini engelle
+
+                const fullname = document.getElementById('fullname').value || 'N/A';
+                const email = document.getElementById('email').value || 'N/A';
+                const phone = document.getElementById('phone').value || 'N/A';
+
+                const prefs = Array.from(document.querySelectorAll('input[name="pref"]:checked'))
+                    .map(el => {
+                        switch (el.value) {
+                            case "1": return "Email";
+                            case "2": return "Phone Call";
+                            case "3": return "Text Message";
+                            default: return "Unknown";
+                        }
+                    }).join(', ') || 'None';
+
+                const datetime = document.getElementById('datetimepicker').value || 'N/A';
+                const datetime2 = document.getElementById('datetimepicker2').value || 'N/A';
+
+                let duration = document.querySelector('input[name="constdurations"]:checked');
+                duration = duration ? (duration.value === "other" ? document.getElementById('otherDurationInput').value : duration.value + ' minutes') : 'N/A';
+
+                const topic = document.getElementById('topicconsultation').value || 'N/A';
+
+                const concerns = document.getElementById('concerns').value || 'None';
+
+                let payment = document.querySelector('input[name="payment"]:checked');
+                payment = payment ? (payment.value === "other" ? document.getElementById('otherPaymentInput').value :
+                    (payment.value === "1" ? "Credit/Debit Card" : payment.value === "2" ? "Paypal" : "Bank Transfer")) : 'N/A';
+
+                const agreement = document.querySelector('input[name="agreement"]:checked') ? 'Agreed' : 'Not Agreed';
+
+                const anything = document.getElementById('anything').value || 'None';
+
+              
+                const formData = {
+                    fullname,
+                    email,
+                    phone,
+                    prefs,
+                    datetime,
+                    datetime2,
+                    duration,
+                    topic,
+                    concerns,
+                    payment,
+                    agreement,
+                    anything
+                };
+
+                
+                fetch('/submit-form', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('Form başarıyla gönderildi!');
+                            form.reset(); 
+                            steps[currentStep].classList.remove('active');
+                            currentStep = 0;
+                            steps[currentStep].classList.add('active');
+                        } else {
+                            alert('Form gönderilirken bir hata oluştu.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Bir hata oluştu.');
+                    });
             });
 
             function validateStep() {

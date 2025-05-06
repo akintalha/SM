@@ -27,6 +27,7 @@
     "mssql": "^6.0.1",
     "multer": "^1.4.2",
     "ncp": "^2.0.0",
+    "nodemailer": "^7.0.2",
     "nodemon": "^3.1.10",
     "path": "^0.12.7",
     "pdf-creator-node": "^1.4.1",

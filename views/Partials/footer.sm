@@ -5,6 +5,11 @@
   .footer-pp{
   display: none;
   }
+    @media (max-width: 991.98px) {
+      .ft-mail{
+        font-size: 12px!important;
+      }
+    }
 </style>
 
 <footer>
@@ -18,7 +23,7 @@
           <strong>Let’s Get Started</strong><br>
           Ready to embark on your beauty journey? Reach out to us today and let’s discuss your unique needs. <br>
           <strong>Email:</strong><br>
-          <a class="text-secondary"
+          <a class="text-secondary ft-mail"
             href="mailto:admin@smbeautyconsultantandbroker.co.uk">admin@smbeautyconsultantandbroker.co.uk</a>
             <br>
           {{!-- <strong>Phone:</strong><br>

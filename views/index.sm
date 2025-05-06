@@ -97,21 +97,31 @@
     font-weight: 600 !important;
   }
 
-   @media (max-width: 991.98px) {
-    .typing-demo{
+  .aboutusimg {
+    width: 100% !important;
+    object-fit: contain;
+    
+  }
+
+  @media (max-width: 991.98px) {
+    .typing-demo {
       font-size: 1.25rem !important;
-      max-width: 240px!important;
+      max-width: 240px !important;
     }
-    .pa{
-      max-width: 200px!important;
-      font-size: .75rem!important;
+
+    .pa {
+      max-width: 200px !important;
+      font-size: .75rem !important;
     }
-    .aboutusimg{
-      width: 100%!important;
-      height: 400px!important;
+
+    .aboutusimg {
+      width: 100% !important;
+      height: 400px !important;
       object-fit: cover;
     }
-   }
+  }
+
+
 </style>
 
 
@@ -189,9 +199,7 @@
           <div class="col-lg-5">
             {{!-- <div class="shadow rounded bg-cover bp-center align-self-end"
               style="background-image: url(assets/img/asd.jpg);--bs-aspect-ratio: 50%;"></div> --}}
-            <img class="aboutusimg"
-              style="width:525px!important;height:700px!important;object-fit:contain;box-shadow: 0 3rem 4rem rgba(21, 21, 21, .25);"
-              src="/assets/img/asd.jpg" alt="">
+            <img class="aboutusimg" src="/assets/img/asd.jpg" alt="">
           </div>
           <div class="col-lg-7" style="font-size: 1.25rem;">
             <h3 class="py-5 border-top border-dark" data-aos="fade-left">SM Beauty Consultancy &amp; Brokerage is
@@ -226,13 +234,11 @@
 
     <div class="bg-white-100 w-100 overflow-hidden" id="whatwedo">
       <div class="container py-vh-6">
-
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-lg-5">
             <h3 class="py-5 border-top border-dark" data-aos="fade-right">What We Do</h3>
           </div>
           <div class="col-md-7" data-aos="fade-left">
-            <blockquote>
               <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">At SM Beauty Consultant & Broker, we
                 believe in making beauty accessible, personalized, and world-class. We simplify the complex world of
                 medical tourism by providing expert consultancy and brokerage services that connect you to the finest
@@ -244,13 +250,9 @@
                 Our goal is to be your trusted partner and advocate in this journey, doing all the research and heavy
                 lifting to ensure your aesthetic dreams become a reality. From finding the perfect surgeon to handling
                 travel and post-care logistics, we are here to guide you through every step of the process.
-
               </div>
-            </blockquote>
           </div>
         </div>
-
-
       </div>
     </div>
 
@@ -811,7 +813,3 @@
     window.location.href = "/bookingForm"
   }
 </script>
-
-
-
-</html>
