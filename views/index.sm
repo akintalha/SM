@@ -78,7 +78,7 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-size: 3rem!important;
+    font-size: 3rem !important;
   }
 
   @keyframes typing {
@@ -92,9 +92,26 @@
       border-color: transparent
     }
   }
-  .nav-link{
-    font-weight: 600!important;
+
+  .nav-link {
+    font-weight: 600 !important;
   }
+
+   @media (max-width: 991.98px) {
+    .typing-demo{
+      font-size: 1.25rem !important;
+      max-width: 240px!important;
+    }
+    .pa{
+      max-width: 200px!important;
+      font-size: .75rem!important;
+    }
+    .aboutusimg{
+      width: 100%!important;
+      height: 400px!important;
+      object-fit: cover;
+    }
+   }
 </style>
 
 
@@ -109,9 +126,9 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-7 py-vh-6 position-relative" style="height: 100vh!important;"
-              data-aos="fade-right">
-              <h1 class="display-1 fw-bold mt-5 typing-demo" style="color: #f9f9f9!important;font-size:3rem;max-width:560px;">
+            <div class="col-lg-7 py-vh-6 position-relative" style="height: 100vh!important;" data-aos="fade-right">
+              <h1 class="display-1 fw-bold mt-5 typing-demo"
+                style="color: #f9f9f9!important;font-size:3rem;max-width:560px;">
                 Beauty Beyond Borders</h1>
               <p class="lead pa" style="color: #f9f9f9!important;font-size:1.5rem;max-width:600px;">Connecting You with
                 World-Class Aesthetics – Expertly, Personally, Seamlessly.</p>
@@ -172,7 +189,7 @@
           <div class="col-lg-5">
             {{!-- <div class="shadow rounded bg-cover bp-center align-self-end"
               style="background-image: url(assets/img/asd.jpg);--bs-aspect-ratio: 50%;"></div> --}}
-            <img
+            <img class="aboutusimg"
               style="width:525px!important;height:700px!important;object-fit:contain;box-shadow: 0 3rem 4rem rgba(21, 21, 21, .25);"
               src="/assets/img/asd.jpg" alt="">
           </div>
@@ -181,12 +198,10 @@
               founded and led by Serpil M, a passionate
               professional with dual British and Turkish nationality.
             </h3>
-            <p data-aos="fade-left" data-aos-delay="200">Serpil holds an MBA in
-              Business
-              Administration from the University of Portsmouth and a Postgraduate Diploma in Adult
-              Nursing from the University of Surrey. With over 25 years of experience in health and
-              social care, particularly in the UK, Serpil has always been driven by a passion for
-              delivering the best outcomes for patients.
+            <p data-aos="fade-left" data-aos-delay="200">Serpil holds an MBA in Business Administration from the
+              University of Portsmouth and a Postgraduate Diploma in Adult Nursing from the University of Surrey. With
+              over 25 years of experience in health and social care, particularly in the UK, Serpil has always been
+              driven by a passion for delivering the best outcomes for patients.
             </p>
             <p data-aos="fade-left" data-aos-delay="300">Combining her expertise in healthcare, business administration,
               and beauty, Serpil created SM Beauty Consultant & Broker to bridge the gap between the UK and Turkey in
@@ -218,22 +233,18 @@
           </div>
           <div class="col-md-7" data-aos="fade-left">
             <blockquote>
-              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">At SM Beauty
-                Consultant & Broker, our mission is clear: to connect you with the best surgeons and medical
-                professionals for aesthetic procedures and cosmetic surgery in Turkey. We believe in providing you
-                with personalized, tailored plans that meet your unique goals while prioritizing your safety,
-                well-being, and satisfaction.</div>
-              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">
-
-                We strive to help you look and feel your best, without borders. By partnering with top-tier clinics
-                and professionals, we bridge the gap between you and the treatments you desire. Your beauty journey is
-                unique, and we're here to guide you every step of the way.
+              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">At SM Beauty Consultant & Broker, we
+                believe in making beauty accessible, personalized, and world-class. We simplify the complex world of
+                medical tourism by providing expert consultancy and brokerage services that connect you to the finest
+                aesthetic professionals. We eliminate the confusion caused by social marketing and false information,
+                ensuring that every treatment and experience is tailored to your needs and you make well-informed
+                decisions. We streamline the journey with integrity, openness, and professional insights.
               </div>
               <div class="fs-5 fw-light pt-4 ">
-                We empower you to make informed decisions by raising awareness of potential risks, and we guide you
-                every step of the way on your beauty journey. Our commitment is to uphold the highest standards of
-                care, transparency, and compassion, ensuring that you feel confident and informed throughout your
-                experience.
+                Our goal is to be your trusted partner and advocate in this journey, doing all the research and heavy
+                lifting to ensure your aesthetic dreams become a reality. From finding the perfect surgeon to handling
+                travel and post-care logistics, we are here to guide you through every step of the process.
+
               </div>
             </blockquote>
           </div>
@@ -296,19 +307,18 @@
           <h3 class="py-5 border-top border-dark"> Treatment Selection & Booking
           </h3>
           <p>After choosing your perfect treatment, we guide you through the available options and connect you with
-            your chosen surgeon and their team. They handle every detail, from flight bookings to hotel stays.</p>
+            your chosen surgeon and their team.</p>
         </div>
-        <div class="col-md-6 col-lg-3 pb-0" style="padding-top:18vh;" data-aos="fade-up" data-aos-delay="600">
+        <div class="col-md-6 col-lg-3 pb-0" style="padding-top:25vh;" data-aos="fade-up" data-aos-delay="600">
           <span class="h5 fw-lighter">03.</span>
           <h3 class="py-5 border-top border-dark">Post-Treatment Support & Aftercare</h3>
           <p>We don’t just drop you off after your procedure. Our post-treatment care ensures that you recover
             comfortably, with expert advice and follow-up consultations to track your results.</p>
         </div>
-        <div class="col-md-6 col-lg-3 py-vh-6 pb-0" style="padding-top: 24vh;" data-aos="fade-up" data-aos-delay="800">
+        <div class="col-md-6 col-lg-3 py-vh-6 pb-0" style="padding-top: 30vh;" data-aos="fade-up" data-aos-delay="800">
           <span class="h5 fw-lighter">04.</span>
           <h3 class="py-5 border-top border-dark">Global Beauty Experience</h3>
-          <p>Enjoy world-class treatment at one of our prestigious partner clinics. You're in the best hands, cared
-            for with expertise, genuine compassion, and unwavering attention to your needs.</p>
+          <p>Enjoy world-class treatment at one of our prestigious partner clinics. You're in the best hands.</p>
         </div>
       </div>
     </div>
@@ -399,6 +409,9 @@
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
                 <img src="assets/img/15.png" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
+              <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/img/16.png" class="img-fluid rounded shadow" alt="nice gallery image">
+              </div>
             </div>
           </div>
         </div>
@@ -418,9 +431,6 @@
             world-class treatments at a fraction of the cost you might find in Western countries.</div>
           <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>State-of-the-Art Facilities </b> <br>
             Turkey is home to cutting-edge hospitals and clinics renowned for their medical excellence.</div>
-          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>All-Inclusive Packages</b> <br>
-            Carefully curated packages include surgery, accommodation, transportation, and aftercare, ensuring you get
-            everything you need.</div>
           <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Top-Tier Surgeons</b> <br>
             We work exclusively with board-certified, experienced surgeons who are leaders in their fields.</div>
         </div>
@@ -663,6 +673,56 @@
                 </div>
               </div>
 
+            </div>
+          </div>
+
+          <div class="col-12" style="text-align: center;margin-top: 6rem!important;">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="display-6">Consultations</h2>
+                <p class="lead">Consulting with a beauty expert can offer invaluable insights and guidance as you
+                  navigate your aesthetic journey. Here’s what you can expect from our consultations
+                </p>
+                <div class="row" style="margin-top: 3rem!important;">
+                  <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="200">
+                    <div class="d-flex">
+                      <div class="col-md-12 flex-fill">
+                        <h3 class="h5 my-2">Personalized Advice</h3>
+                        <p> We’ll help you identify your needs, understand your goals, and provide expert advice on the
+                          best surgeons and procedures.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="400">
+                    <div class="d-flex">
+                      <div class="col-md-12 flex-fill">
+                        <h3 class="h5 my-2">Unbiased Recommendations</h3>
+                        <p>Our role is to support you, not the surgeons. We’ll offer honest, unbiased guidance to help
+                          you achieve natural, beautiful results.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="600">
+                    <div class="d-flex">
+                      <div class="col-md-12 flex-fill">
+                        <h3 class="h5 my-2">Dedicated Time</h3>
+                        <p>Each consultation is scheduled to ensure that we have ample time to discuss your case,
+                          address your concerns, and develop a personalized plan of action.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="800">
+                    <div class="d-flex">
+                      <div class="col-md-12 flex-fill">
+                        <h3 class="h5 my-2">Ongoing Support</h3>
+                        <p>We offer flexible follow-up options, including continued counseling or memberships, depending
+                          on your needs.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

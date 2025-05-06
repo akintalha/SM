@@ -1,3 +1,12 @@
+<style>
+  .footer-s {
+  display: none;
+  }
+  .footer-pp{
+  display: none;
+  }
+</style>
+
 <footer>
   <div class="container small border-top">
     <div class="row py-5 d-flex justify-content-between">
@@ -22,62 +31,62 @@
             href="/termsandconditions">Terms and Conditions</a></strong>
         </address>
       </div>
-      <div class="col-12 col-lg-6 col-xl-4 border-end p-5">
+      <div class="col-12 col-lg-6 col-xl-4 border-end p-5 footer-s">
         <h3 class="h6 mb-3">Section</h3>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Services</a>
+            <a class="nav-link link-secondary ps-0" aria-current="page" href="#services">Our Mission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">About us</a>
+            <a class="nav-link link-secondary ps-0" href="#aboutus">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#"> What We Do</a>
+            <a class="nav-link link-secondary ps-0" href="#whatwedo"> What We Do</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Our Services</a>
+            <a class="nav-link link-secondary ps-0" href="#ourservices">Our Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">How It Works</a>
+            <a class="nav-link link-secondary ps-0" href="#howitworks">How It Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Procedures</a>
+            <a class="nav-link link-secondary ps-0" href="#gallery">Procedures</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Why Choose Us</a>
+            <a class="nav-link link-secondary ps-0" href="#whychoose">Why Choose Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Booking Process</a>
+            <a class="nav-link link-secondary ps-0" href="#workwithus">Booking Process</a>
           </li>
 
         </ul>
       </div>
-      <div class="col-12 col-lg-6 col-xl-4 border-end p-5">
+      <div class="col-12 col-lg-6 col-xl-4 border-end p-5 footer-pp">
         <h3 class="h6 mb-3">Popular Procedures</h3>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Rhinoplasty (Nose Surgery)</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Rhinoplasty (Nose Surgery)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Breast Augmentation</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Breast Augmentation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Liposuction</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Liposuction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Tummy Tuck (Abdominoplasty)</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Tummy Tuck (Abdominoplasty)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Brazilian Butt Lift (BBL)</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Brazilian Butt Lift (BBL)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Facelift (Rhytidectomy)</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Facelift (Rhytidectomy)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Eyelid Surgery (Blepharoplasty)</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Eyelid Surgery (Blepharoplasty)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="#">Hair Transplantation</a>
+            <a class="nav-link link-secondary ps-0" href="javascript:void(0)">Hair Transplantation</a>
           </li>
 
         </ul>

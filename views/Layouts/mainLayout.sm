@@ -20,7 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
-<body style="min-width: 1190px;" id="etkinlikbody">
+<body id="etkinlikbody">
   <div id="MainBody">
     {{>leftmenu}}
     <section class="home-section">
