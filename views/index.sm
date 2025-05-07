@@ -138,9 +138,9 @@
           <div class="row">
             <div class="col-lg-7 py-vh-6 position-relative" style="height: 100vh!important;" data-aos="fade-right">
               <h1 class="display-1 fw-bold mt-5 typing-demo"
-                style="color: #f9f9f9!important;font-size:3rem;width:25ch;">
+                style="color: #f9f9f9!important;font-size:3rem;width:17ch;">
                 Beauty Beyond Borders</h1>
-              <p class="lead pa" style="color: #f9f9f9!important;font-size:1.5rem;max-width:600px;">Connecting You with
+              <p class="lead pa" style="color: #f9f9f9!important;font-size:1.5rem;max-width:600px;" data-aos="fade-left" data-aos-delay="1000">Connecting You with
                 World-Class Aesthetics – Expertly, Personally, Seamlessly.</p>
               <a href="https://wa.me/447497466099" target="_blank"
                 class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
