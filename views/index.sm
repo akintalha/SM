@@ -132,7 +132,7 @@
       id="top">
       <div class="position-relative">
         <div class="col-12 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
-          style="background-image: url(assets/img/bizimis2.png);">
+          style="background-image: url(assets/img/bizimis2.webp);">
         </div>
         <div class="container">
           <div class="row">
@@ -197,9 +197,7 @@
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
           <div class="col-lg-5">
-            {{!-- <div class="shadow rounded bg-cover bp-center align-self-end"
-              style="background-image: url(assets/img/asd.jpg);--bs-aspect-ratio: 50%;"></div> --}}
-            <img class="aboutusimg" src="/assets/img/asd.jpg" alt="">
+            <img class="aboutusimg" src="/assets/img/asd.webp" alt="">
           </div>
           <div class="col-lg-7" style="font-size: 1.25rem;">
             <h3 class="py-5 border-top border-dark" data-aos="fade-left">SM Beauty Consultancy &amp; Brokerage is
@@ -367,52 +365,52 @@
           <div class="col-12">
             <div class="scroll-gallery py-vh-3" style="padding-bottom: 10vh;">
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/1.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/1.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
-                <img src="assets/img/2.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/2.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
-                <img src="assets/img/3.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/3.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/4.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/4.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/5.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/5.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
-                <img src="assets/img/6.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/6.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
-                <img src="assets/img/7.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/7.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/8.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/8.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/9.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/9.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/10.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/10.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/11.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/11.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/12.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/12.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/13.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/13.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/14.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/14.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/15.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/15.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
               <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
-                <img src="assets/img/16.png" class="img-fluid rounded shadow" alt="nice gallery image">
+                <img src="assets/img/16.webp" class="img-fluid rounded shadow" alt="nice gallery image">
               </div>
             </div>
           </div>
@@ -568,7 +566,7 @@
                         <span class="h6 fw-5">Anna T.</span><br>
                         <small class="text-muted">Client</small>
                       </div>
-                      <img src="assets/img/webp/person9.webp" width="48" height="48" class="rounded-circle" alt=""
+                      <img src="assets/img/person9.webp" width="48" height="48" class="rounded-circle" alt=""
                         data-aos="fade">
                     </div>
                   </div>
@@ -618,7 +616,7 @@
                         <span class="h6 fw-5">Jane L.</span><br>
                         <small class="text-muted">Client</small>
                       </p>
-                      <img src="assets/img/webp/person3.webp" width="48" height="48" class="rounded-circle" alt=""
+                      <img src="assets/img/person3.webp" width="48" height="48" class="rounded-circle" alt=""
                         data-aos="fade">
                     </div>
                   </div>
@@ -668,7 +666,7 @@
                         <span class="h6 fw-5">Emily S.</span><br>
                         <small class="text-muted">Client</small>
                       </p>
-                      <img src="assets/img/webp/person12.webp" width="48" height="48" class="rounded-circle" alt=""
+                      <img src="assets/img/person12.webp" width="48" height="48" class="rounded-circle" alt=""
                         data-aos="fade">
                     </div>
                   </div>
