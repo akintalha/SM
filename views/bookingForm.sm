@@ -307,7 +307,8 @@
                             <!-- Step 3 -->
                             <div class="form-step">
                                 <div class="step-header">Step 3 of 7</div>
-                                <h2>Medical or Health Information (if applicable)</h2>
+                                <h2>Medical or Health Information</h2>
+                                <h2>(if applicable)</h2>
                                 <label for="concerns">Do you have any pre-existing conditions or concerns you
                                     would like to share?:</label>
                                 <p style="font-size: 12px;font-weight: 600;margin-bottom:0;">(This section is
