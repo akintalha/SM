@@ -81,6 +81,12 @@
     font-size: 2rem !important;
   }
 
+  .pa {
+    color: #f9f9f9 !important;
+    font-size: 1.5rem;
+    max-width: 600px;
+  }
+
   @keyframes typing {
     from {
       width: 0
@@ -100,7 +106,7 @@
   .aboutusimg {
     width: 100% !important;
     object-fit: contain;
-    
+
   }
 
   @media (max-width: 991.98px) {
@@ -121,7 +127,12 @@
     }
   }
 
-
+  @media (max-width: 1500px) {
+    .pa {
+      font-size: 1rem;
+      width: 35ch;
+    }
+  }
 </style>
 
 
@@ -140,7 +151,7 @@
               <h1 class="display-1 fw-bold mt-5 typing-demo"
                 style="color: #f9f9f9!important;font-size:3rem;width:17ch;">
                 Beauty Beyond Borders</h1>
-              <p class="lead pa" style="color: #f9f9f9!important;font-size:1.5rem;max-width:600px;" data-aos="fade-left" data-aos-delay="1000">Connecting You with
+              <p class="lead pa" data-aos="fade-left" data-aos-delay="1500">Connecting You with
                 World-Class Aesthetics – Expertly, Personally, Seamlessly.</p>
               <a href="https://wa.me/447497466099" target="_blank"
                 class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
@@ -237,18 +248,18 @@
             <h3 class="py-5 border-top border-dark" data-aos="fade-right">What We Do</h3>
           </div>
           <div class="col-md-7" data-aos="fade-left">
-              <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">At SM Beauty Consultant & Broker, we
-                believe in making beauty accessible, personalized, and world-class. We simplify the complex world of
-                medical tourism by providing expert consultancy and brokerage services that connect you to the finest
-                aesthetic professionals. We eliminate the confusion caused by social marketing and false information,
-                ensuring that every treatment and experience is tailored to your needs and you make well-informed
-                decisions. We streamline the journey with integrity, openness, and professional insights.
-              </div>
-              <div class="fs-5 fw-light pt-4 ">
-                Our goal is to be your trusted partner and advocate in this journey, doing all the research and heavy
-                lifting to ensure your aesthetic dreams become a reality. From finding the perfect surgeon to handling
-                travel and post-care logistics, we are here to guide you through every step of the process.
-              </div>
+            <div class="fs-5 fw-light pt-4 border-bottom border-dark pb-3">At SM Beauty Consultant & Broker, we
+              believe in making beauty accessible, personalized, and world-class. We simplify the complex world of
+              medical tourism by providing expert consultancy and brokerage services that connect you to the finest
+              aesthetic professionals. We eliminate the confusion caused by social marketing and false information,
+              ensuring that every treatment and experience is tailored to your needs and you make well-informed
+              decisions. We streamline the journey with integrity, openness, and professional insights.
+            </div>
+            <div class="fs-5 fw-light pt-4 ">
+              Our goal is to be your trusted partner and advocate in this journey, doing all the research and heavy
+              lifting to ensure your aesthetic dreams become a reality. From finding the perfect surgeon to handling
+              travel and post-care logistics, we are here to guide you through every step of the process.
+            </div>
           </div>
         </div>
       </div>
@@ -421,24 +432,6 @@
 
     <div class="container py-vh-4 w-100 overflow-hidden" id="whychoose">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-5">
-          <h3 class="py-5 border-top border-dark" data-aos="fade-right">Why Choose Türkiye for Your Beauty Journey?</h3>
-        </div>
-        <div class="col-md-7" data-aos="fade-left">
-          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b> Affordable, High-Quality Procedures</b> <br>
-            Turkey
-            offers
-            world-class treatments at a fraction of the cost you might find in Western countries.</div>
-          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>State-of-the-Art Facilities </b> <br>
-            Turkey is home to cutting-edge hospitals and clinics renowned for their medical excellence.</div>
-          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Top-Tier Surgeons</b> <br>
-            We work exclusively with board-certified, experienced surgeons who are leaders in their fields.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container py-vh-4 w-100 overflow-hidden">
-      <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-7" data-aos="fade-right">
           <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Personalized Service</b> <br>
             We take the time to understand you—your goals, your concerns, and your dreams—so we can offer you the most
@@ -458,6 +451,26 @@
         </div>
       </div>
     </div>
+
+    <div class="container py-vh-4 w-100 overflow-hidden" >
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-5">
+          <h3 class="py-5 border-top border-dark" data-aos="fade-right">Why Choose Turkey for Your Beauty Journey?</h3>
+        </div>
+        <div class="col-md-7" data-aos="fade-left">
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b> Affordable, High-Quality Procedures</b> <br>
+            Turkey
+            offers
+            world-class treatments at a fraction of the cost you might find in Western countries.</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>State-of-the-Art Facilities </b> <br>
+            Turkey is home to cutting-edge hospitals and clinics renowned for their medical excellence.</div>
+          <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Top-Tier Surgeons</b> <br>
+            We work exclusively with board-certified, experienced surgeons who are leaders in their fields.</div>
+        </div>
+      </div>
+    </div>
+
+
 
     <div class="py-vh-4 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus">
       <div class="container">
@@ -808,6 +821,6 @@
 <script>
 
   function gobookingform() {
-     window.open("/bookingForm", "_blank");
+    window.open("/bookingForm", "_blank");
   }
 </script>
