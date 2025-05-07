@@ -1,15 +1,17 @@
 <style>
-  .footer-s {
-  display: none;
-  }
-  .footer-pp{
-  display: none;
-  }
-    @media (max-width: 991.98px) {
-      .ft-mail{
-        font-size: 12px!important;
-      }
+  @media (max-width: 991.98px) {
+    .ft-mail {
+      font-size: 12px !important;
     }
+
+    .footer-s {
+      display: none;
+    }
+
+    .footer-pp {
+      display: none;
+    }
+  }
 </style>
 
 <footer>
@@ -17,7 +19,8 @@
     <div class="row py-5 d-flex justify-content-between">
 
       <div class="col-12 col-lg-6 col-xl-4 border-end p-5">
-        <img src="assets/img/smlogonewblack.svg" style="filter: contrast(0.5);" alt="" width="64" height="64" data-aos="fade-right">
+        <img src="assets/img/smlogonewblack.svg" style="filter: contrast(0.5);" alt="" width="64" height="64"
+          data-aos="fade-right">
         <address class="text-secondary mt-3">
           <strong>SM Beauty Consultant & Broker</strong><br>
           <strong>Let’s Get Started</strong><br>
@@ -25,15 +28,13 @@
           <strong>Email:</strong><br>
           <a class="text-secondary ft-mail"
             href="mailto:admin@smbeautyconsultantandbroker.co.uk">admin@smbeautyconsultantandbroker.co.uk</a>
-            <br>
+          <br>
           {{!-- <strong>Phone:</strong><br>
           <a class="text-secondary" href="https://wa.me/447497466099" target="_blank">+44 7497 466099</a> --}}
 
-            <strong> <a class="text-secondary"
-            href="/privacystatement">Privacy Policy</a>
+          <strong> <a class="text-secondary" href="/privacystatement">Privacy Policy</a>
             <br></strong>
-             <strong> <a class="text-secondary"
-            href="/termsandconditions">Terms and Conditions</a></strong>
+          <strong> <a class="text-secondary" href="/termsandconditions">Terms and Conditions</a></strong>
         </address>
       </div>
       <div class="col-12 col-lg-6 col-xl-4 border-end p-5 footer-s">
@@ -98,7 +99,7 @@
       </div>
     </div>
   </div>
-  <div class="container text-center py-3 small">	&#169; SM Beauty Consultant & Broker <a href="^#" class="link-fancy"
+  <div class="container text-center py-3 small"> &#169; SM Beauty Consultant & Broker <a href="^#" class="link-fancy"
       target="_blank">All Rights Reserved.</a>
   </div>
 </footer>
