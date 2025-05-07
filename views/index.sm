@@ -452,7 +452,7 @@
       </div>
     </div>
 
-    <div class="container py-vh-4 w-100 overflow-hidden" >
+    <div class="container py-vh-4 w-100 overflow-hidden">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-5">
           <h3 class="py-5 border-top border-dark" data-aos="fade-right">Why Choose Turkey for Your Beauty Journey?</h3>
@@ -525,6 +525,60 @@
     </div>
 
     <div class="bg-light w-100 overflow-hidden" id="testimonials">
+      <div class="container py-vh-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 text-center">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="display-6">Consultations</h2>
+                <p class="lead">Consulting with a beauty expert can offer invaluable insights and guidance as you
+                  navigate your aesthetic journey. Here’s what you can expect from our consultations
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 3rem!important;">
+          <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="200">
+            <div class="d-flex">
+              <div class="col-md-12 flex-fill">
+                <h3 class="h5 my-2">Personalized Advice</h3>
+                <p> We’ll help you identify your needs, understand your goals, and provide expert advice on the
+                  best surgeons and procedures.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="400">
+            <div class="d-flex">
+              <div class="col-md-12 flex-fill">
+                <h3 class="h5 my-2">Unbiased Recommendations</h3>
+                <p>Our role is to support you, not the surgeons. We’ll offer honest, unbiased guidance to help
+                  you achieve natural, beautiful results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="600">
+            <div class="d-flex">
+              <div class="col-md-12 flex-fill">
+                <h3 class="h5 my-2">Dedicated Time</h3>
+                <p>Each consultation is scheduled to ensure that we have ample time to discuss your case,
+                  address your concerns, and develop a personalized plan of action.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="800">
+            <div class="d-flex">
+              <div class="col-md-12 flex-fill">
+                <h3 class="h5 my-2">Ongoing Support</h3>
+                <p>We offer flexible follow-up options, including continued counseling or memberships, depending
+                  on your needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container py-vh-6">
         <div class="row d-flex justify-content-center">
           <div class="col-12 col-lg-10 col-xl-8 text-center">
@@ -585,6 +639,8 @@
                   </div>
                 </div>
               </div>
+
+
 
               <div class="col-12 col-lg-6 col-xl-4">
                 <div class="card p-4 shadow mt-3 border-0" data-aos="fade-down">
@@ -689,55 +745,7 @@
             </div>
           </div>
 
-          <div class="col-12" style="text-align: center;margin-top: 6rem!important;">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="display-6">Consultations</h2>
-                <p class="lead">Consulting with a beauty expert can offer invaluable insights and guidance as you
-                  navigate your aesthetic journey. Here’s what you can expect from our consultations
-                </p>
-                <div class="row" style="margin-top: 3rem!important;">
-                  <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="200">
-                    <div class="d-flex">
-                      <div class="col-md-12 flex-fill">
-                        <h3 class="h5 my-2">Personalized Advice</h3>
-                        <p> We’ll help you identify your needs, understand your goals, and provide expert advice on the
-                          best surgeons and procedures.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="400">
-                    <div class="d-flex">
-                      <div class="col-md-12 flex-fill">
-                        <h3 class="h5 my-2">Unbiased Recommendations</h3>
-                        <p>Our role is to support you, not the surgeons. We’ll offer honest, unbiased guidance to help
-                          you achieve natural, beautiful results.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 border-end" data-aos="fade-up" data-aos-delay="600">
-                    <div class="d-flex">
-                      <div class="col-md-12 flex-fill">
-                        <h3 class="h5 my-2">Dedicated Time</h3>
-                        <p>Each consultation is scheduled to ensure that we have ample time to discuss your case,
-                          address your concerns, and develop a personalized plan of action.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="800">
-                    <div class="d-flex">
-                      <div class="col-md-12 flex-fill">
-                        <h3 class="h5 my-2">Ongoing Support</h3>
-                        <p>We offer flexible follow-up options, including continued counseling or memberships, depending
-                          on your needs.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
         </div>
       </div>
