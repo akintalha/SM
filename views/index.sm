@@ -73,12 +73,12 @@
   }
 
   .typing-demo {
-    width: 25ch;
+    width: 17ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
 
   @keyframes typing {
@@ -138,7 +138,7 @@
           <div class="row">
             <div class="col-lg-7 py-vh-6 position-relative" style="height: 100vh!important;" data-aos="fade-right">
               <h1 class="display-1 fw-bold mt-5 typing-demo"
-                style="color: #f9f9f9!important;font-size:3rem;max-width:560px;">
+                style="color: #f9f9f9!important;font-size:3rem;width:25ch;">
                 Beauty Beyond Borders</h1>
               <p class="lead pa" style="color: #f9f9f9!important;font-size:1.5rem;max-width:600px;">Connecting You with
                 World-Class Aesthetics – Expertly, Personally, Seamlessly.</p>
@@ -808,6 +808,6 @@
 <script>
 
   function gobookingform() {
-    window.location.href = "/bookingForm"
+     window.open("/bookingForm", "_blank");
   }
 </script>

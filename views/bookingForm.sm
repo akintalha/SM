@@ -217,6 +217,25 @@
     #navScroll {
         display: none;
     }
+
+      @media (max-width: 1500px) {
+        h2{
+            font-size: 1rem!important;
+        }
+        h3{
+            font-size: 1rem!important;
+        }
+        p{
+            font-size: .75rem!important;
+        }
+        label{
+            font-size: .75rem!important;
+        }
+        .step-header{
+                padding: 0.25em .5em;
+            }
+
+      }
 </style>
 
 </head>
