@@ -120,10 +120,10 @@ app.post("/submit-form", async function (req, res) {
 
     try {
         await transporter.sendMail(mailOptions);
-        res.status(200).send("E-posta başarıyla gönderildi.");
+        res.status(200).json({ success: true, message: "E-posta başarıyla gönderildi." });
     } catch (error) {
         console.error("Mail gönderim hatası:", error);
-        res.status(500).send("E-posta gönderilemedi.");
+       res.status(500).json({ success: false, message: "E-posta gönderilemedi." });
     }
 });
 
