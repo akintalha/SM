@@ -484,13 +484,13 @@
                     .then(response => response.json())
                     .then(data => {
                         if (data.success) {
-                            alert('Form başarıyla gönderildi!');
+                            alert('The form has been successfully submitted!');
                             form.reset(); 
                             steps[currentStep].classList.remove('active');
                             currentStep = 0;
                             steps[currentStep].classList.add('active');
                         } else {
-                            alert('Form gönderilirken bir hata oluştu.');
+                            alert('There was an error sending the form. Please try again.');
                         }
                     })
                     .catch(error => {
