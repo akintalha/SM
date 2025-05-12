@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(device.capture());
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
 function renderParams(data, user, gridprop, layout = "mainLayout") {
     var renderedOBJ = {};

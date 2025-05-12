@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://smbeautybroker.co.uk/sitemap.xml
