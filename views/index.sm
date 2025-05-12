@@ -131,7 +131,7 @@
 
     .aboutusimg {
       width: 100% !important;
-      height: 400px !important;
+      height: 600px !important;
       object-fit: cover;
     }
   }
