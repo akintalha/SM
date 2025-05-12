@@ -27,7 +27,7 @@
           Ready to embark on your beauty journey? Reach out to us today and let’s discuss your unique needs. <br>
           <strong>Email:</strong><br>
           <a class="text-secondary ft-mail"
-            href="admin@smbeautybroker.co.uk">admin@smbeautybroker.co.uk</a>
+            href="mailto:admin@smbeautybroker.co.uk">admin@smbeautybroker.co.uk</a>
           <br>
           {{!-- <strong>Phone:</strong><br>
           <a class="text-secondary" href="https://wa.me/447497466099" target="_blank">+44 7497 466099</a> --}}
