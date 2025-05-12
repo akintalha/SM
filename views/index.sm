@@ -87,6 +87,15 @@
     max-width: 600px;
   }
 
+  .about-title {
+    display: none;
+  }
+
+  .about-title-h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
   @keyframes typing {
     from {
       width: 0
@@ -131,6 +140,16 @@
     .pa {
       font-size: 1rem;
       width: 35ch;
+    }
+
+    .hiw-m {
+      padding-bottom: 15vh !important;
+    }
+
+    .about-title {
+      display: block;
+      text-align: center;
+      padding-bottom: 4vh;
     }
   }
 </style>
@@ -208,6 +227,10 @@
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
           <div class="col-lg-5">
+            <div class="about-title">
+              <h3 class="about-title-h3" data-aos="fade-left">About Us
+              </h3>
+            </div>
             <img class="aboutusimg" src="/assets/img/asd.webp" alt="">
           </div>
           <div class="col-lg-7" style="font-size: 1.25rem;">
@@ -300,7 +323,7 @@
     </div>
 
     <div class="container" id="howitworks">
-      <div class="row d-flex justify-content-end py-vh-4">
+      <div class="row d-flex justify-content-end py-vh-4 hiw-m">
         <div class="col-lg-12" data-aos="fade-down">
           <h2 class="display-6" style="font-weight:500;text-align:start;">How It Works</h2>
         </div>
@@ -359,7 +382,7 @@
                 <div class="display-1 fw-bold py-4">+500</div>
                 <p class="text-black-50">Successful procedure journeys supported from consultation to post-op care. Each
                   case is guided by our dedicated team, offering tailored solutions and full-service coordination in
-                  trusted clinics around the world.</p>
+                  trusted clinics.</p>
               </div>
             </div>
           </div>
@@ -432,6 +455,9 @@
 
     <div class="container py-vh-4 w-100 overflow-hidden" id="whychoose">
       <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-5">
+          <h3 class="py-5 border-top border-dark" data-aos="fade-right">Why Choose Us?</h3>
+        </div>
         <div class="col-md-7" data-aos="fade-right">
           <div class="fs-5 my-3 fw-light pt-2 pb-1"><b>Personalized Service</b> <br>
             We take the time to understand you—your goals, your concerns, and your dreams—so we can offer you the most
@@ -446,9 +472,7 @@
             Enjoy high-quality treatments at competitive prices. With our network of trusted partners, we help you save
             while receiving the very best in beauty and medical care.</div>
         </div>
-        <div class="col-lg-5">
-          <h3 class="py-5 border-top border-dark" data-aos="fade-right">Why Choose Us?</h3>
-        </div>
+
       </div>
     </div>
 
@@ -582,9 +606,8 @@
       <div class="container py-vh-6">
         <div class="row d-flex justify-content-center">
           <div class="col-12 col-lg-10 col-xl-8 text-center">
-            <h2 class="display-6">Trusted by clients from all over the world</h2>
-            <p class="lead">From Europe to the Middle East, from North America to the Gulf — we’ve helped hundreds of
-              clients plan their aesthetic journey with care, clarity, and confidence. Real stories, real results.
+            <h2 class="display-6">Testimonials</h2>
+            <p class="lead">Real stories, real results.
             </p>
           </div>
           <div class="col-12 mt-4">
